@@ -1,0 +1,59 @@
+C:\Users\52664\Desktop\Tec\Sexto Semestre\Ingeniería de Software\Programa\RecOptico\RecOptico\bin\Debug\RecOptico.exe.config
+C:\Users\52664\Desktop\Tec\Sexto Semestre\Ingeniería de Software\Programa\RecOptico\RecOptico\bin\Debug\RecOptico.exe
+C:\Users\52664\Desktop\Tec\Sexto Semestre\Ingeniería de Software\Programa\RecOptico\RecOptico\bin\Debug\RecOptico.pdb
+C:\Users\52664\Desktop\Tec\Sexto Semestre\Ingeniería de Software\Programa\RecOptico\RecOptico\obj\Debug\RecOptico.csprojAssemblyReference.cache
+C:\Users\52664\Desktop\Tec\Sexto Semestre\Ingeniería de Software\Programa\RecOptico\RecOptico\obj\Debug\RecOptico.frmLogin.resources
+C:\Users\52664\Desktop\Tec\Sexto Semestre\Ingeniería de Software\Programa\RecOptico\RecOptico\obj\Debug\RecOptico.Properties.Resources.resources
+C:\Users\52664\Desktop\Tec\Sexto Semestre\Ingeniería de Software\Programa\RecOptico\RecOptico\obj\Debug\RecOptico.csproj.GenerateResource.cache
+C:\Users\52664\Desktop\Tec\Sexto Semestre\Ingeniería de Software\Programa\RecOptico\RecOptico\obj\Debug\RecOptico.csproj.CoreCompileInputs.cache
+C:\Users\52664\Desktop\Tec\Sexto Semestre\Ingeniería de Software\Programa\RecOptico\RecOptico\obj\Debug\RecOptico.exe
+C:\Users\52664\Desktop\Tec\Sexto Semestre\Ingeniería de Software\Programa\RecOptico\RecOptico\obj\Debug\RecOptico.pdb
+C:\Users\52664\Desktop\Tec\Sexto Semestre\Ingeniería de Software\Programa\RecOptico\RecOptico\obj\Debug\RecOptico.Registrarse.resources
+C:\Users\Dell\Documents\Escuela\6to Semestre\Ingenieria de software\P¨royecto\Nueva carpeta\RecOptico\RecOptico\bin\Debug\RecOptico.exe.config
+C:\Users\Dell\Documents\Escuela\6to Semestre\Ingenieria de software\P¨royecto\Nueva carpeta\RecOptico\RecOptico\bin\Debug\RecOptico.exe
+C:\Users\Dell\Documents\Escuela\6to Semestre\Ingenieria de software\P¨royecto\Nueva carpeta\RecOptico\RecOptico\bin\Debug\RecOptico.pdb
+C:\Users\Dell\Documents\Escuela\6to Semestre\Ingenieria de software\P¨royecto\Nueva carpeta\RecOptico\RecOptico\obj\Debug\RecOptico.csprojAssemblyReference.cache
+C:\Users\Dell\Documents\Escuela\6to Semestre\Ingenieria de software\P¨royecto\Nueva carpeta\RecOptico\RecOptico\obj\Debug\RecOptico.AgregarPaciente.resources
+C:\Users\Dell\Documents\Escuela\6to Semestre\Ingenieria de software\P¨royecto\Nueva carpeta\RecOptico\RecOptico\obj\Debug\RecOptico.frmLogin.resources
+C:\Users\Dell\Documents\Escuela\6to Semestre\Ingenieria de software\P¨royecto\Nueva carpeta\RecOptico\RecOptico\obj\Debug\RecOptico.frmHistorial.resources
+C:\Users\Dell\Documents\Escuela\6to Semestre\Ingenieria de software\P¨royecto\Nueva carpeta\RecOptico\RecOptico\obj\Debug\RecOptico.Properties.Resources.resources
+C:\Users\Dell\Documents\Escuela\6to Semestre\Ingenieria de software\P¨royecto\Nueva carpeta\RecOptico\RecOptico\obj\Debug\RecOptico.RecuperarContraseña.resources
+C:\Users\Dell\Documents\Escuela\6to Semestre\Ingenieria de software\P¨royecto\Nueva carpeta\RecOptico\RecOptico\obj\Debug\RecOptico.Registrarse.resources
+C:\Users\Dell\Documents\Escuela\6to Semestre\Ingenieria de software\P¨royecto\Nueva carpeta\RecOptico\RecOptico\obj\Debug\RecOptico.csproj.GenerateResource.cache
+C:\Users\Dell\Documents\Escuela\6to Semestre\Ingenieria de software\P¨royecto\Nueva carpeta\RecOptico\RecOptico\obj\Debug\RecOptico.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Documents\Escuela\6to Semestre\Ingenieria de software\P¨royecto\Nueva carpeta\RecOptico\RecOptico\obj\Debug\RecOptico.exe
+C:\Users\Dell\Documents\Escuela\6to Semestre\Ingenieria de software\P¨royecto\Nueva carpeta\RecOptico\RecOptico\obj\Debug\RecOptico.pdb
+C:\Users\PC\OneDrive\Escritorio\RecOptico\RecOptico\bin\Debug\RecOptico.exe.config
+C:\Users\PC\OneDrive\Escritorio\RecOptico\RecOptico\bin\Debug\RecOptico.exe
+C:\Users\PC\OneDrive\Escritorio\RecOptico\RecOptico\bin\Debug\RecOptico.pdb
+C:\Users\PC\OneDrive\Escritorio\RecOptico\RecOptico\obj\Debug\RecOptico.csprojAssemblyReference.cache
+C:\Users\PC\OneDrive\Escritorio\RecOptico\RecOptico\obj\Debug\RecOptico.AgregarPaciente.resources
+C:\Users\PC\OneDrive\Escritorio\RecOptico\RecOptico\obj\Debug\RecOptico.frmLogin.resources
+C:\Users\PC\OneDrive\Escritorio\RecOptico\RecOptico\obj\Debug\RecOptico.frmHistorial.resources
+C:\Users\PC\OneDrive\Escritorio\RecOptico\RecOptico\obj\Debug\RecOptico.Menu.resources
+C:\Users\PC\OneDrive\Escritorio\RecOptico\RecOptico\obj\Debug\RecOptico.Properties.Resources.resources
+C:\Users\PC\OneDrive\Escritorio\RecOptico\RecOptico\obj\Debug\RecOptico.RecuperarContraseña.resources
+C:\Users\PC\OneDrive\Escritorio\RecOptico\RecOptico\obj\Debug\RecOptico.Registrarse.resources
+C:\Users\PC\OneDrive\Escritorio\RecOptico\RecOptico\obj\Debug\RecOptico.csproj.GenerateResource.cache
+C:\Users\PC\OneDrive\Escritorio\RecOptico\RecOptico\obj\Debug\RecOptico.csproj.CoreCompileInputs.cache
+C:\Users\PC\OneDrive\Escritorio\RecOptico\RecOptico\obj\Debug\RecOptico.exe
+C:\Users\PC\OneDrive\Escritorio\RecOptico\RecOptico\obj\Debug\RecOptico.pdb
+C:\Users\Dell\Documents\Escuela\6to Semestre\Ingenieria de software\P¨royecto\Nueva carpeta (2)\RecOptico\RecOptico\bin\Debug\RecOptico.exe.config
+C:\Users\Dell\Documents\Escuela\6to Semestre\Ingenieria de software\P¨royecto\Nueva carpeta (2)\RecOptico\RecOptico\bin\Debug\RecOptico.exe
+C:\Users\Dell\Documents\Escuela\6to Semestre\Ingenieria de software\P¨royecto\Nueva carpeta (2)\RecOptico\RecOptico\bin\Debug\RecOptico.pdb
+C:\Users\Dell\Documents\Escuela\6to Semestre\Ingenieria de software\P¨royecto\Nueva carpeta (2)\RecOptico\RecOptico\obj\Debug\RecOptico.csprojAssemblyReference.cache
+C:\Users\Dell\Documents\Escuela\6to Semestre\Ingenieria de software\P¨royecto\Nueva carpeta (2)\RecOptico\RecOptico\obj\Debug\RecOptico.AgregarPaciente.resources
+C:\Users\Dell\Documents\Escuela\6to Semestre\Ingenieria de software\P¨royecto\Nueva carpeta (2)\RecOptico\RecOptico\obj\Debug\RecOptico.frmLogin.resources
+C:\Users\Dell\Documents\Escuela\6to Semestre\Ingenieria de software\P¨royecto\Nueva carpeta (2)\RecOptico\RecOptico\obj\Debug\RecOptico.frmHistorial.resources
+C:\Users\Dell\Documents\Escuela\6to Semestre\Ingenieria de software\P¨royecto\Nueva carpeta (2)\RecOptico\RecOptico\obj\Debug\RecOptico.Menu.resources
+C:\Users\Dell\Documents\Escuela\6to Semestre\Ingenieria de software\P¨royecto\Nueva carpeta (2)\RecOptico\RecOptico\obj\Debug\RecOptico.Properties.Resources.resources
+C:\Users\Dell\Documents\Escuela\6to Semestre\Ingenieria de software\P¨royecto\Nueva carpeta (2)\RecOptico\RecOptico\obj\Debug\RecOptico.RecuperarContraseña.resources
+C:\Users\Dell\Documents\Escuela\6to Semestre\Ingenieria de software\P¨royecto\Nueva carpeta (2)\RecOptico\RecOptico\obj\Debug\RecOptico.Registrarse.resources
+C:\Users\Dell\Documents\Escuela\6to Semestre\Ingenieria de software\P¨royecto\Nueva carpeta (2)\RecOptico\RecOptico\obj\Debug\RecOptico.csproj.GenerateResource.cache
+C:\Users\Dell\Documents\Escuela\6to Semestre\Ingenieria de software\P¨royecto\Nueva carpeta (2)\RecOptico\RecOptico\obj\Debug\RecOptico.csproj.CoreCompileInputs.cache
+C:\Users\Dell\Documents\Escuela\6to Semestre\Ingenieria de software\P¨royecto\Nueva carpeta (2)\RecOptico\RecOptico\obj\Debug\RecOptico.exe
+C:\Users\Dell\Documents\Escuela\6to Semestre\Ingenieria de software\P¨royecto\Nueva carpeta (2)\RecOptico\RecOptico\obj\Debug\RecOptico.pdb
+C:\Users\52664\Desktop\Tec\Sexto Semestre\Ingeniería de Software\Programa\RecOptico\RecOptico\obj\Debug\RecOptico.AgregarPaciente.resources
+C:\Users\52664\Desktop\Tec\Sexto Semestre\Ingeniería de Software\Programa\RecOptico\RecOptico\obj\Debug\RecOptico.frmHistorial.resources
+C:\Users\52664\Desktop\Tec\Sexto Semestre\Ingeniería de Software\Programa\RecOptico\RecOptico\obj\Debug\RecOptico.Menu.resources
+C:\Users\52664\Desktop\Tec\Sexto Semestre\Ingeniería de Software\Programa\RecOptico\RecOptico\obj\Debug\RecOptico.RecuperarContraseña.resources
