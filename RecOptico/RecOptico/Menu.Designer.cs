@@ -42,6 +42,7 @@ namespace RecOptico
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.cmdLogOff = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -179,12 +180,22 @@ namespace RecOptico
             this.cmdLogOff.TabIndex = 11;
             this.cmdLogOff.Text = "¿Cerrar sesión?";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(394, 264);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "label2";
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(444, 278);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.cmdLogOff);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.pictureBox5);
@@ -224,5 +235,6 @@ namespace RecOptico
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.Label cmdLogOff;
+        private System.Windows.Forms.Label label2;
     }
 }
