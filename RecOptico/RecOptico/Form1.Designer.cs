@@ -184,9 +184,9 @@ namespace RecOptico
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(290, 441);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.Size = new System.Drawing.Size(31, 13);
             this.label6.TabIndex = 12;
-            this.label6.Text = "label6";
+            this.label6.Text = "UwU";
             // 
             // frmLogin
             // 
