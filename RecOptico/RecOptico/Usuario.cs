@@ -18,27 +18,27 @@ namespace RecOptico
             Con.Close();
             return resultado;
         }
-        public static int DatosPaciente(String pNombres, String Apellidos, String Edad, String Telefono, String Correo)
+        public static int DatosPaciente(String pNombres, String Apellidos, String Edad, String Telefono, String Correo, String Direccion)
         {
             int resultado = 0;
             SqlConnection Con = DBComun.ObtenerConexion();
-            SqlCommand comando = new SqlCommand(string.Format("Insert into Pacientes (Nombre_Pacientes, Apellido_Pacientes, Edad_Pacientes, Telefono_Pacientes, Correo_Pacientes) " +
-                "values ('{0}', '{1}','{2}','{3}','{4}')", pNombres, Apellidos, Edad, Telefono, Correo),Con);
+            SqlCommand comando = new SqlCommand(string.Format("Insert into Pacientes (Nombre_Pacientes, Apellido_Pacientes, Edad_Pacientes, Telefono_Pacientes, Correo_Pacientes, Direccion) " +
+                "values ('{0}', '{1}','{2}','{3}','{4}','{5}')", pNombres, Apellidos, Edad, Telefono, Correo, Direccion),Con);
             resultado = comando.ExecuteNonQuery();
             Con.Close();
             return resultado;
         }
-        public static int Receta(String EsfeDerLejos, String CilDerLejos, String EjeDerLejos, String EsfeIzqLejos, String CilIzqLejos, String EjeIzqLejos,
-            String EsfeDerCerca, String CilDerCerca, String EjeDerCerca, String EsfeIzqCerca, String CilIzqCerca, String EjeIzqCerca,
-            String Observaciones, String DIP)
+        public static int Receta(decimal EsfeDerLejos, decimal CilDerLejos, decimal EjeDerLejos, decimal EsfeIzqLejos, decimal CilIzqLejos, decimal EjeIzqLejos,
+            decimal EsfeDerCerca, decimal CilDerCerca, decimal EjeDerCerca, decimal EsfeIzqCerca, decimal CilIzqCerca, decimal EjeIzqCerca,
+            decimal DIP, String Observaciones)
         {
             int resultado = 0;
             SqlConnection Con = DBComun.ObtenerConexion();
             SqlCommand comando2 = new SqlCommand(string.Format("Insert into Examen (EsferaLejosDerecho, CilindroLejosDerecho, EjeLejosDerecho, EsferaLejosIzquierdo, CilindroLejosIzquierdo, EjeLejosIzquierdo, " +
-                "EsferaCercaDerecho, CilindroCercaDerecho, EjeCercaDerecho, EsferaCercaIzquierdo, CilindroCercaIzquierdo, EjeCercaIzquierdo, DIP, Observaciones)" +
+                "EsferaCercaDerecho, CilindroCercaDerecho, EjeCercaDerecho, EsferaCercaIzquierdo, CilindroCercaIzquierda, EjeCercaIzquierdo, DIP, Observaciones)" +
                 "values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}', '{13}')",
-                Convert.ToDecimal(EsfeDerLejos), Convert.ToDecimal(CilDerLejos), Convert.ToDecimal(EjeDerLejos), Convert.ToDecimal(EsfeIzqLejos), Convert.ToDecimal(CilIzqLejos), Convert.ToDecimal(EjeIzqLejos),
-                Convert.ToDecimal(EsfeDerCerca), Convert.ToDecimal(CilDerCerca), Convert.ToDecimal(EjeDerCerca), Convert.ToDecimal(EsfeIzqCerca), Convert.ToDecimal(CilIzqCerca), Convert.ToDecimal(EjeIzqCerca), Convert.ToDecimal(DIP), Observaciones),Con);
+                EsfeDerLejos, CilDerLejos, EjeDerLejos, EsfeIzqLejos, CilIzqLejos, EjeIzqLejos,
+                EsfeDerCerca, CilDerCerca, EjeDerCerca, EsfeIzqCerca, CilIzqCerca, EjeIzqCerca, DIP, Observaciones),Con);
             resultado = comando2.ExecuteNonQuery();
             Con.Close();
             return resultado;

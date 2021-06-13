@@ -109,7 +109,6 @@ namespace RecOptico
             // txtContra
             // 
             this.txtContra.Location = new System.Drawing.Point(68, 287);
-            this.txtContra.Multiline = true;
             this.txtContra.Name = "txtContra";
             this.txtContra.Size = new System.Drawing.Size(246, 20);
             this.txtContra.TabIndex = 5;

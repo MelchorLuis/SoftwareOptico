@@ -57,3 +57,18 @@ C:\Users\52664\Desktop\Tec\Sexto Semestre\Ingeniería de Software\Programa\RecOp
 C:\Users\52664\Desktop\Tec\Sexto Semestre\Ingeniería de Software\Programa\RecOptico\RecOptico\obj\Debug\RecOptico.frmHistorial.resources
 C:\Users\52664\Desktop\Tec\Sexto Semestre\Ingeniería de Software\Programa\RecOptico\RecOptico\obj\Debug\RecOptico.Menu.resources
 C:\Users\52664\Desktop\Tec\Sexto Semestre\Ingeniería de Software\Programa\RecOptico\RecOptico\obj\Debug\RecOptico.RecuperarContraseña.resources
+C:\Users\52664\Desktop\SoftwareOptico\RecOptico\RecOptico\bin\Debug\RecOptico.exe.config
+C:\Users\52664\Desktop\SoftwareOptico\RecOptico\RecOptico\bin\Debug\RecOptico.exe
+C:\Users\52664\Desktop\SoftwareOptico\RecOptico\RecOptico\bin\Debug\RecOptico.pdb
+C:\Users\52664\Desktop\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.csprojAssemblyReference.cache
+C:\Users\52664\Desktop\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.AgregarPaciente.resources
+C:\Users\52664\Desktop\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.frmLogin.resources
+C:\Users\52664\Desktop\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.frmHistorial.resources
+C:\Users\52664\Desktop\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.Menu.resources
+C:\Users\52664\Desktop\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.Properties.Resources.resources
+C:\Users\52664\Desktop\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.RecuperarContraseña.resources
+C:\Users\52664\Desktop\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.Registrarse.resources
+C:\Users\52664\Desktop\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.csproj.GenerateResource.cache
+C:\Users\52664\Desktop\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.csproj.CoreCompileInputs.cache
+C:\Users\52664\Desktop\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.exe
+C:\Users\52664\Desktop\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.pdb
