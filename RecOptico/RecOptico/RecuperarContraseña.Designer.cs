@@ -103,7 +103,7 @@ namespace RecOptico
             this.cmdVerificar.Location = new System.Drawing.Point(128, 160);
             this.cmdVerificar.Name = "cmdVerificar";
             this.cmdVerificar.Size = new System.Drawing.Size(100, 23);
-            this.cmdVerificar.TabIndex = 16;
+            this.cmdVerificar.TabIndex = 10;
             this.cmdVerificar.Text = "Verificar correo";
             this.cmdVerificar.UseVisualStyleBackColor = true;
             this.cmdVerificar.Click += new System.EventHandler(this.cmdVerificar_Click);
@@ -113,7 +113,7 @@ namespace RecOptico
             this.txtOldPass.Location = new System.Drawing.Point(20, 224);
             this.txtOldPass.Name = "txtOldPass";
             this.txtOldPass.Size = new System.Drawing.Size(335, 20);
-            this.txtOldPass.TabIndex = 15;
+            this.txtOldPass.TabIndex = 11;
             // 
             // label4
             // 
@@ -147,7 +147,7 @@ namespace RecOptico
             this.txtNewPass.Location = new System.Drawing.Point(20, 285);
             this.txtNewPass.Name = "txtNewPass";
             this.txtNewPass.Size = new System.Drawing.Size(335, 20);
-            this.txtNewPass.TabIndex = 11;
+            this.txtNewPass.TabIndex = 12;
             // 
             // label2
             // 

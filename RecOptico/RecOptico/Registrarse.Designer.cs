@@ -83,7 +83,7 @@ namespace RecOptico
             this.cmdAtras.Location = new System.Drawing.Point(251, 427);
             this.cmdAtras.Name = "cmdAtras";
             this.cmdAtras.Size = new System.Drawing.Size(95, 34);
-            this.cmdAtras.TabIndex = 16;
+            this.cmdAtras.TabIndex = 15;
             this.cmdAtras.Text = "&Atras";
             this.cmdAtras.UseVisualStyleBackColor = true;
             this.cmdAtras.Click += new System.EventHandler(this.btnAtras_Click);
@@ -94,7 +94,7 @@ namespace RecOptico
             this.txtContrasenaConfirmar.Name = "txtContrasenaConfirmar";
             this.txtContrasenaConfirmar.PasswordChar = '*';
             this.txtContrasenaConfirmar.Size = new System.Drawing.Size(335, 20);
-            this.txtContrasenaConfirmar.TabIndex = 15;
+            this.txtContrasenaConfirmar.TabIndex = 13;
             // 
             // label7
             // 
@@ -112,7 +112,7 @@ namespace RecOptico
             this.cmdRegistrar.Location = new System.Drawing.Point(43, 427);
             this.cmdRegistrar.Name = "cmdRegistrar";
             this.cmdRegistrar.Size = new System.Drawing.Size(95, 34);
-            this.cmdRegistrar.TabIndex = 13;
+            this.cmdRegistrar.TabIndex = 14;
             this.cmdRegistrar.Text = "&Registrar";
             this.cmdRegistrar.UseVisualStyleBackColor = true;
             this.cmdRegistrar.Click += new System.EventHandler(this.button1_Click);
@@ -136,13 +136,15 @@ namespace RecOptico
             // 
             this.cmbSexo.FormattingEnabled = true;
             this.cmbSexo.Items.AddRange(new object[] {
-            "Masculino",
             "Femenino",
-            "Otro"});
+            "Masculino",
+            "No Binario",
+            "Otro(s)"});
             this.cmbSexo.Location = new System.Drawing.Point(31, 216);
             this.cmbSexo.Name = "cmbSexo";
             this.cmbSexo.Size = new System.Drawing.Size(335, 21);
             this.cmbSexo.TabIndex = 10;
+            this.cmbSexo.Text = "Femenino";
             // 
             // label4
             // 
