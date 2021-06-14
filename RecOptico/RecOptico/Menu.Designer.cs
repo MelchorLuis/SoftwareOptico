@@ -103,6 +103,7 @@ namespace RecOptico
             this.cmdAgenda.TabIndex = 4;
             this.cmdAgenda.Text = "Agenda";
             this.cmdAgenda.UseVisualStyleBackColor = false;
+            this.cmdAgenda.Click += new System.EventHandler(this.cmdAgenda_Click);
             // 
             // cmdHistorial
             // 
