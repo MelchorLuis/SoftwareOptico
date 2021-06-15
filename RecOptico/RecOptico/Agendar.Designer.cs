@@ -35,12 +35,14 @@ namespace RecOptico
             this.lblHistorial = new System.Windows.Forms.Label();
             this.cbHora = new System.Windows.Forms.ComboBox();
             this.lblHora = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblPaciente = new System.Windows.Forms.Label();
+            this.lblEncargado = new System.Windows.Forms.Label();
             this.cbPaciente = new System.Windows.Forms.ComboBox();
             this.cbEncargado = new System.Windows.Forms.ComboBox();
             this.cmdAtras = new System.Windows.Forms.Button();
             this.cmdRegistrar = new System.Windows.Forms.Button();
+            this.lblProcedimiento = new System.Windows.Forms.Label();
+            this.txtProcedimiento = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,7 +88,7 @@ namespace RecOptico
             // 
             this.cbHora.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbHora.FormattingEnabled = true;
-            this.cbHora.Location = new System.Drawing.Point(467, 109);
+            this.cbHora.Location = new System.Drawing.Point(467, 65);
             this.cbHora.Name = "cbHora";
             this.cbHora.Size = new System.Drawing.Size(196, 21);
             this.cbHora.TabIndex = 2;
@@ -95,37 +97,37 @@ namespace RecOptico
             // 
             this.lblHora.AutoSize = true;
             this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHora.Location = new System.Drawing.Point(464, 77);
+            this.lblHora.Location = new System.Drawing.Point(464, 33);
             this.lblHora.Name = "lblHora";
             this.lblHora.Size = new System.Drawing.Size(42, 16);
             this.lblHora.TabIndex = 4;
             this.lblHora.Text = "Hora";
             // 
-            // label2
+            // lblPaciente
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(464, 156);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 16);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Paciente";
+            this.lblPaciente.AutoSize = true;
+            this.lblPaciente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPaciente.Location = new System.Drawing.Point(464, 107);
+            this.lblPaciente.Name = "lblPaciente";
+            this.lblPaciente.Size = new System.Drawing.Size(69, 16);
+            this.lblPaciente.TabIndex = 5;
+            this.lblPaciente.Text = "Paciente";
             // 
-            // label3
+            // lblEncargado
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(464, 227);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 16);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Encargado";
+            this.lblEncargado.AutoSize = true;
+            this.lblEncargado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEncargado.Location = new System.Drawing.Point(464, 178);
+            this.lblEncargado.Name = "lblEncargado";
+            this.lblEncargado.Size = new System.Drawing.Size(84, 16);
+            this.lblEncargado.TabIndex = 7;
+            this.lblEncargado.Text = "Encargado";
             // 
             // cbPaciente
             // 
             this.cbPaciente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbPaciente.FormattingEnabled = true;
-            this.cbPaciente.Location = new System.Drawing.Point(467, 189);
+            this.cbPaciente.Location = new System.Drawing.Point(467, 140);
             this.cbPaciente.Name = "cbPaciente";
             this.cbPaciente.Size = new System.Drawing.Size(196, 21);
             this.cbPaciente.TabIndex = 8;
@@ -134,7 +136,7 @@ namespace RecOptico
             // 
             this.cbEncargado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbEncargado.FormattingEnabled = true;
-            this.cbEncargado.Location = new System.Drawing.Point(467, 264);
+            this.cbEncargado.Location = new System.Drawing.Point(467, 215);
             this.cbEncargado.Name = "cbEncargado";
             this.cbEncargado.Size = new System.Drawing.Size(196, 21);
             this.cbEncargado.TabIndex = 9;
@@ -142,7 +144,7 @@ namespace RecOptico
             // cmdAtras
             // 
             this.cmdAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdAtras.Location = new System.Drawing.Point(568, 314);
+            this.cmdAtras.Location = new System.Drawing.Point(568, 334);
             this.cmdAtras.Name = "cmdAtras";
             this.cmdAtras.Size = new System.Drawing.Size(95, 34);
             this.cmdAtras.TabIndex = 18;
@@ -152,7 +154,7 @@ namespace RecOptico
             // cmdRegistrar
             // 
             this.cmdRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdRegistrar.Location = new System.Drawing.Point(467, 314);
+            this.cmdRegistrar.Location = new System.Drawing.Point(467, 334);
             this.cmdRegistrar.Name = "cmdRegistrar";
             this.cmdRegistrar.Size = new System.Drawing.Size(95, 34);
             this.cmdRegistrar.TabIndex = 17;
@@ -160,18 +162,38 @@ namespace RecOptico
             this.cmdRegistrar.UseVisualStyleBackColor = true;
             this.cmdRegistrar.Click += new System.EventHandler(this.cmdRegistrar_Click);
             // 
+            // lblProcedimiento
+            // 
+            this.lblProcedimiento.AutoSize = true;
+            this.lblProcedimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProcedimiento.Location = new System.Drawing.Point(464, 247);
+            this.lblProcedimiento.Name = "lblProcedimiento";
+            this.lblProcedimiento.Size = new System.Drawing.Size(108, 16);
+            this.lblProcedimiento.TabIndex = 19;
+            this.lblProcedimiento.Text = "Procedimiento";
+            // 
+            // txtProcedimiento
+            // 
+            this.txtProcedimiento.Location = new System.Drawing.Point(467, 266);
+            this.txtProcedimiento.Multiline = true;
+            this.txtProcedimiento.Name = "txtProcedimiento";
+            this.txtProcedimiento.Size = new System.Drawing.Size(196, 62);
+            this.txtProcedimiento.TabIndex = 21;
+            // 
             // Agendar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(725, 380);
+            this.Controls.Add(this.txtProcedimiento);
+            this.Controls.Add(this.lblProcedimiento);
             this.Controls.Add(this.cmdAtras);
             this.Controls.Add(this.cmdRegistrar);
             this.Controls.Add(this.cbEncargado);
             this.Controls.Add(this.cbPaciente);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblEncargado);
+            this.Controls.Add(this.lblPaciente);
             this.Controls.Add(this.lblHora);
             this.Controls.Add(this.cbHora);
             this.Controls.Add(this.panel1);
@@ -192,11 +214,13 @@ namespace RecOptico
         private System.Windows.Forms.Label lblHistorial;
         private System.Windows.Forms.ComboBox cbHora;
         private System.Windows.Forms.Label lblHora;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblPaciente;
+        private System.Windows.Forms.Label lblEncargado;
         private System.Windows.Forms.ComboBox cbPaciente;
         private System.Windows.Forms.ComboBox cbEncargado;
         private System.Windows.Forms.Button cmdAtras;
         private System.Windows.Forms.Button cmdRegistrar;
+        private System.Windows.Forms.Label lblProcedimiento;
+        private System.Windows.Forms.TextBox txtProcedimiento;
     }
 }
