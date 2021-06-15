@@ -35,5 +35,11 @@ namespace RecOptico
             historial.Show();
             this.Hide();
         }
+
+        private void cmdAgenda_Click(object sender, EventArgs e)
+        {
+            Agendar Age = new Agendar();
+            Age.Show();
+        }
     }
 }
