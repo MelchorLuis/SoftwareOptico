@@ -1,6 +1,14 @@
 {
   "ExpandedNodes": [
+<<<<<<< HEAD
     ""
   ],
+=======
+    "",
+    "\\RecOptico",
+    "\\RecOptico\\RecOptico"
+  ],
+  "SelectedNode": "\\RecOptico\\RecOptico.sln",
+>>>>>>> 1873f769fb491d0e89780b6114c882039520de60
   "PreviewInSolutionExplorer": false
 }

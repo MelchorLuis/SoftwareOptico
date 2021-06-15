@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Agendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agendar.Designer.cs">
+      <DependentUpon>Agendar.cs</DependentUpon>
+    </Compile>
     <Compile Include="AgregarPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
       <DependentUpon>Registrarse.cs</DependentUpon>
     </Compile>
     <Compile Include="Usuario.cs" />
+    <EmbeddedResource Include="Agendar.resx">
+      <DependentUpon>Agendar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AgregarPaciente.resx">
       <DependentUpon>AgregarPaciente.cs</DependentUpon>
     </EmbeddedResource>
