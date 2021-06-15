@@ -63,11 +63,11 @@ namespace RecOptico
             // 
             this.lblHistorial.AutoSize = true;
             this.lblHistorial.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHistorial.Location = new System.Drawing.Point(120, 38);
+            this.lblHistorial.Location = new System.Drawing.Point(104, 38);
             this.lblHistorial.Name = "lblHistorial";
-            this.lblHistorial.Size = new System.Drawing.Size(146, 39);
+            this.lblHistorial.Size = new System.Drawing.Size(183, 39);
             this.lblHistorial.TabIndex = 5;
-            this.lblHistorial.Text = "Agendar";
+            this.lblHistorial.Text = "Calendario";
             // 
             // monthCalendar1
             // 
