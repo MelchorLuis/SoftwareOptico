@@ -11,7 +11,7 @@ namespace RecOptico
     {
         public static SqlConnection ObtenerConexion()
         {
-            SqlConnection Con = new SqlConnection("SERVER=LAPTOP-NOLKORRR; DATABASE= ProyectoOptometria; Integrated security=true");
+            SqlConnection Con = new SqlConnection("Data Source=DESKTOP-MO6T4C3\\SQLEXPRESS; Integrated Security = SSPI; Initial Catalog = Proyecto");
             Con.Open();
             return Con;
         }

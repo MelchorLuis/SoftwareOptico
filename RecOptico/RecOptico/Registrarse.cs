@@ -22,36 +22,51 @@ namespace RecOptico
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (Correo(txtCorreo.Text) == true)
+            if (txtNombre.Text == "" || txtApellidos.Text == "")
             {
-                if (txtContrasenaRegistrarse.Text == txtContrasenaConfirmar.Text)
-                {
-
-                    if (Usuario.CrearCuenta(txtNombre.Text, txtApellidos.Text, date.Value.ToString("yyyyMMdd"), cmbSexo.SelectedIndex.ToString(), txtCorreo.Text, txtContrasenaRegistrarse.Text) > 0)
-                    {
-                        MessageBox.Show("Cuenta creada con éxito!");
-                        frmLogin Login = new frmLogin();
-                        this.Close();
-                        Login.Show();
-                    }
-                    else
-                    {
-                        MessageBox.Show("No se pudo crear cuenta", "Error");
-                    }
-                }
-                else if (txtContrasenaRegistrarse.Text != txtContrasenaConfirmar.Text)
-                {
-                    MessageBox.Show("La contraseña no coincide", "Error");
-                    txtContrasenaRegistrarse.Clear();
-                    txtContrasenaConfirmar.Clear();
-                    txtContrasenaRegistrarse.Focus();
-                }
+                MessageBox.Show("Ingrese minimo un nombre y apellido, por favor");
             }
             else
             {
-                MessageBox.Show("Correo no válido", "Error");
-                txtCorreo.Clear();
-                txtCorreo.Focus();
+                if (Correo(txtCorreo.Text) == true)
+                {
+                    if (txtContrasenaRegistrarse.Text == "")
+                    {
+                        MessageBox.Show("Ingrese contraseña, por favor");
+                        txtContrasenaRegistrarse.Focus();
+                    }
+                    else
+                    {
+                        if (txtContrasenaRegistrarse.Text == txtContrasenaConfirmar.Text)
+                        {
+
+                            if (Usuario.CrearCuenta(txtNombre.Text, txtApellidos.Text, date.Value.ToString("yyyyMMdd"), cmbSexo.Text, txtCorreo.Text, txtContrasenaRegistrarse.Text) > 0)
+                            {
+                                MessageBox.Show("Cuenta creada con éxito!");
+                                frmLogin Login = new frmLogin();
+                                this.Close();
+                                Login.Show();
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se pudo crear cuenta", "Error");
+                            }
+                        }
+                        else if (txtContrasenaRegistrarse.Text != txtContrasenaConfirmar.Text)
+                        {
+                            MessageBox.Show("La contraseña no coincide", "Error");
+                            txtContrasenaRegistrarse.Clear();
+                            txtContrasenaConfirmar.Clear();
+                            txtContrasenaRegistrarse.Focus();
+                        }
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Correo no válido", "Error");
+                    txtCorreo.Clear();
+                    txtCorreo.Focus();
+                }
             }
         }
 

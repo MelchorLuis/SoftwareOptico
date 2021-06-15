@@ -57,6 +57,7 @@ C:\Users\52664\Desktop\Tec\Sexto Semestre\Ingeniería de Software\Programa\RecOp
 C:\Users\52664\Desktop\Tec\Sexto Semestre\Ingeniería de Software\Programa\RecOptico\RecOptico\obj\Debug\RecOptico.frmHistorial.resources
 C:\Users\52664\Desktop\Tec\Sexto Semestre\Ingeniería de Software\Programa\RecOptico\RecOptico\obj\Debug\RecOptico.Menu.resources
 C:\Users\52664\Desktop\Tec\Sexto Semestre\Ingeniería de Software\Programa\RecOptico\RecOptico\obj\Debug\RecOptico.RecuperarContraseña.resources
+<<<<<<< HEAD
 C:\Users\luis-\Source\Repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\bin\Debug\RecOptico.exe.config
 C:\Users\luis-\Source\Repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\bin\Debug\RecOptico.exe
 C:\Users\luis-\Source\Repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\bin\Debug\RecOptico.pdb
@@ -72,3 +73,21 @@ C:\Users\luis-\Source\Repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\obj\D
 C:\Users\luis-\Source\Repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.csproj.CoreCompileInputs.cache
 C:\Users\luis-\Source\Repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.exe
 C:\Users\luis-\Source\Repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.pdb
+=======
+C:\Users\Dell\source\repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\bin\Debug\RecOptico.exe.config
+C:\Users\Dell\source\repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\bin\Debug\RecOptico.exe
+C:\Users\Dell\source\repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\bin\Debug\RecOptico.pdb
+C:\Users\Dell\source\repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.csprojAssemblyReference.cache
+C:\Users\Dell\source\repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.AgregarPaciente.resources
+C:\Users\Dell\source\repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.frmLogin.resources
+C:\Users\Dell\source\repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.frmHistorial.resources
+C:\Users\Dell\source\repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.Menu.resources
+C:\Users\Dell\source\repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.Properties.Resources.resources
+C:\Users\Dell\source\repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.RecuperarContraseña.resources
+C:\Users\Dell\source\repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.Registrarse.resources
+C:\Users\Dell\source\repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.csproj.GenerateResource.cache
+C:\Users\Dell\source\repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.exe
+C:\Users\Dell\source\repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.pdb
+C:\Users\Dell\source\repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.Agendar.resources
+>>>>>>> 96fcaf7108c3b87bd9ef0f69a2a9325e6f222cc6
