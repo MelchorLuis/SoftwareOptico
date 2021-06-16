@@ -49,7 +49,7 @@ namespace RecOptico
             // 
             this.lblTexto.AutoSize = true;
             this.lblTexto.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTexto.Location = new System.Drawing.Point(170, 26);
+            this.lblTexto.Location = new System.Drawing.Point(235, 28);
             this.lblTexto.Name = "lblTexto";
             this.lblTexto.Size = new System.Drawing.Size(278, 38);
             this.lblTexto.TabIndex = 0;
