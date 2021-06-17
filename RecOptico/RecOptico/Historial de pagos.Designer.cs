@@ -31,7 +31,6 @@ namespace RecOptico
         {
             this.lblTexto = new System.Windows.Forms.Label();
             this.dtwHistorialPagos = new System.Windows.Forms.DataGridView();
-            this.cmdAtras = new System.Windows.Forms.Button();
             this.ColumnaFolio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnaFecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnaCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -39,6 +38,7 @@ namespace RecOptico
             this.ColumnaID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnaNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnaApellidos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cmdAtras = new System.Windows.Forms.Button();
             this.cmdBuscar = new System.Windows.Forms.Button();
             this.txtBusquedaPaciente = new System.Windows.Forms.TextBox();
             this.lblBusqueda = new System.Windows.Forms.Label();
@@ -70,15 +70,6 @@ namespace RecOptico
             this.dtwHistorialPagos.Name = "dtwHistorialPagos";
             this.dtwHistorialPagos.Size = new System.Drawing.Size(742, 305);
             this.dtwHistorialPagos.TabIndex = 3;
-            // 
-            // cmdAtras
-            // 
-            this.cmdAtras.Location = new System.Drawing.Point(637, 424);
-            this.cmdAtras.Name = "cmdAtras";
-            this.cmdAtras.Size = new System.Drawing.Size(119, 44);
-            this.cmdAtras.TabIndex = 10;
-            this.cmdAtras.Text = "&Atras";
-            this.cmdAtras.UseVisualStyleBackColor = true;
             // 
             // ColumnaFolio
             // 
@@ -115,6 +106,16 @@ namespace RecOptico
             this.ColumnaApellidos.HeaderText = "Apellidos";
             this.ColumnaApellidos.Name = "ColumnaApellidos";
             // 
+            // cmdAtras
+            // 
+            this.cmdAtras.Location = new System.Drawing.Point(637, 424);
+            this.cmdAtras.Name = "cmdAtras";
+            this.cmdAtras.Size = new System.Drawing.Size(119, 44);
+            this.cmdAtras.TabIndex = 10;
+            this.cmdAtras.Text = "&Atras";
+            this.cmdAtras.UseVisualStyleBackColor = true;
+            this.cmdAtras.Click += new System.EventHandler(this.cmdAtras_Click);
+            // 
             // cmdBuscar
             // 
             this.cmdBuscar.Location = new System.Drawing.Point(329, 445);
@@ -123,6 +124,7 @@ namespace RecOptico
             this.cmdBuscar.TabIndex = 14;
             this.cmdBuscar.Text = "&Buscar";
             this.cmdBuscar.UseVisualStyleBackColor = true;
+            this.cmdBuscar.Click += new System.EventHandler(this.cmdBuscar_Click);
             // 
             // txtBusquedaPaciente
             // 

@@ -12,9 +12,31 @@ namespace RecOptico
 {
     public partial class Historial_de_pagos : Form
     {
+
+        //Nueva forma
+        Menu menu = new Menu();
+
         public Historial_de_pagos()
         {
             InitializeComponent();
+        }
+
+        private void cmdBuscar_Click(object sender, EventArgs e)
+        {
+            if (Usuario.Buscar(Convert.ToInt32(txtBusquedaPaciente.Text)) > 0)
+            {
+                MessageBox.Show("Se encontré al paciente");
+            }
+            else
+            {
+                MessageBox.Show("No se encontró el paciente");
+            }
+        }
+
+        private void cmdAtras_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            menu.Show();
         }
     }
 }
