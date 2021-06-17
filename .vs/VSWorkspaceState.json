@@ -1,33 +1,9 @@
 {
   "ExpandedNodes": [
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    "",
-    "\\RecOptico"
-  ],
-  "SelectedNode": "\\RecOptico\\RecOptico.sln",
-=======
-<<<<<<< HEAD
-    "",
-    "\\RecOptico"
-  ],
-=======
-<<<<<<< HEAD
-    ""
-  ],
-=======
->>>>>>> 654d36ac038e616c1c8913a658d1080121210da6
     "",
     "\\RecOptico",
     "\\RecOptico\\RecOptico"
   ],
-<<<<<<< HEAD
-=======
-  "SelectedNode": "\\RecOptico\\RecOptico.sln",
->>>>>>> 1873f769fb491d0e89780b6114c882039520de60
->>>>>>> fbc89919d164716461aa7e9b2a88a0d4a03a2cfb
->>>>>>> 96fcaf7108c3b87bd9ef0f69a2a9325e6f222cc6
->>>>>>> 654d36ac038e616c1c8913a658d1080121210da6
+  "SelectedNode": "\\RecOptico\\RecOptico\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }
