@@ -52,6 +52,15 @@ namespace RecOptico
             Con.Close();
             return resultado;
         }
+        public static int Buscar(int pFolio)
+        {
+            int resultado = 0;
+            SqlConnection Con = DBComun.ObtenerConexion();
+            SqlCommand Comando = new SqlCommand(string.Format("select * from Historial_Pagos where ID_Pacientes = '{0}'", pFolio), Con);
+            resultado = Comando.ExecuteNonQuery();
+            Con.Close();
+            return resultado;
+        }
         public static int Autentificar(string pUsuario, string pContraseña)
         {
             int resultado = -1;

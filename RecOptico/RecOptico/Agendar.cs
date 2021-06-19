@@ -49,7 +49,7 @@ namespace RecOptico
         private void cmdRegistrar_Click(object sender, EventArgs e)
         {
             SqlConnection Con = DBComun.ObtenerConexion();
-            SqlCommand Comando = new SqlCommand(string.Format("Insert Into Agenda (Paciente, Encargado, Hora, Fecha) values ('{0}','{1}','{2}','{3}')",cbPaciente, cbEncargado, cbHora, 
+            SqlCommand Comando = new SqlCommand(string.Format("Insert Into Agenda (Paciente, Encargado, Hora, Fecha) values ('{0}','{1}','{2}','{3}')",cbPaciente.SelectedItem, cbEncargado.SelectedItem, cbHora.SelectedItem, 
                 Calendario.SelectionRange.Start.ToShortDateString()), Con);
             Comando.ExecuteNonQuery();
             Con.Close();
