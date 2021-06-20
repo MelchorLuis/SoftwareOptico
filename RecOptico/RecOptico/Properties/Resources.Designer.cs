@@ -63,6 +63,16 @@ namespace RecOptico.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Imagenpago {
+            get {
+                object obj = ResourceManager.GetObject("Imagenpago", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap logo_melcan {
             get {
                 object obj = ResourceManager.GetObject("logo melcan", resourceCulture);

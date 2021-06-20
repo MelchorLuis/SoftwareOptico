@@ -58,6 +58,12 @@
     <Compile Include="AgregarPaciente.Designer.cs">
       <DependentUpon>AgregarPaciente.cs</DependentUpon>
     </Compile>
+    <Compile Include="AgregarPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarPago.Designer.cs">
+      <DependentUpon>AgregarPago.cs</DependentUpon>
+    </Compile>
     <Compile Include="Calendario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AgregarPaciente.resx">
       <DependentUpon>AgregarPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarPago.resx">
+      <DependentUpon>AgregarPago.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Calendario.resx">
       <DependentUpon>Calendario.cs</DependentUpon>
@@ -168,6 +177,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\User_icon_BLACK-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagenpago.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

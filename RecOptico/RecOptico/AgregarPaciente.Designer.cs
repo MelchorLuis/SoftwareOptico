@@ -42,11 +42,11 @@ namespace RecOptico
             this.lblCorreo = new System.Windows.Forms.Label();
             this.grpDatos = new System.Windows.Forms.GroupBox();
             this.grpComunicacion = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
             this.grpExamen = new System.Windows.Forms.GroupBox();
             this.txtDIP = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtPrecioT = new System.Windows.Forms.TextBox();
-            this.lblPrecioT = new System.Windows.Forms.Label();
             this.lblObservaciones = new System.Windows.Forms.Label();
             this.txtObservaciones = new System.Windows.Forms.TextBox();
             this.lblOZ2 = new System.Windows.Forms.Label();
@@ -80,8 +80,6 @@ namespace RecOptico
             this.txtEjeIzqLejos = new System.Windows.Forms.TextBox();
             this.cmdAgregar = new System.Windows.Forms.Button();
             this.cmdAtras = new System.Windows.Forms.Button();
-            this.txtDireccion = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.grpDatos.SuspendLayout();
             this.grpComunicacion.SuspendLayout();
             this.grpExamen.SuspendLayout();
@@ -250,13 +248,30 @@ namespace RecOptico
             this.grpComunicacion.TabStop = false;
             this.grpComunicacion.Text = "Comunicación";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(143, 90);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(90, 24);
+            this.label2.TabIndex = 37;
+            this.label2.Text = "Dirección";
+            // 
+            // txtDireccion
+            // 
+            this.txtDireccion.Location = new System.Drawing.Point(10, 117);
+            this.txtDireccion.Multiline = true;
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(350, 71);
+            this.txtDireccion.TabIndex = 36;
+            this.txtDireccion.Text = "\r\n";
+            // 
             // grpExamen
             // 
             this.grpExamen.BackColor = System.Drawing.Color.LightBlue;
             this.grpExamen.Controls.Add(this.txtDIP);
             this.grpExamen.Controls.Add(this.label1);
-            this.grpExamen.Controls.Add(this.txtPrecioT);
-            this.grpExamen.Controls.Add(this.lblPrecioT);
             this.grpExamen.Controls.Add(this.lblObservaciones);
             this.grpExamen.Controls.Add(this.txtObservaciones);
             this.grpExamen.Controls.Add(this.lblOZ2);
@@ -278,7 +293,7 @@ namespace RecOptico
             // 
             // txtDIP
             // 
-            this.txtDIP.Location = new System.Drawing.Point(546, 196);
+            this.txtDIP.Location = new System.Drawing.Point(546, 247);
             this.txtDIP.Name = "txtDIP";
             this.txtDIP.Size = new System.Drawing.Size(173, 21);
             this.txtDIP.TabIndex = 35;
@@ -286,33 +301,16 @@ namespace RecOptico
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(543, 176);
+            this.label1.Location = new System.Drawing.Point(543, 227);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(30, 15);
             this.label1.TabIndex = 34;
             this.label1.Text = "DIP:";
             // 
-            // txtPrecioT
-            // 
-            this.txtPrecioT.Location = new System.Drawing.Point(546, 287);
-            this.txtPrecioT.Name = "txtPrecioT";
-            this.txtPrecioT.Size = new System.Drawing.Size(100, 21);
-            this.txtPrecioT.TabIndex = 0;
-            this.txtPrecioT.Text = "4500";
-            // 
-            // lblPrecioT
-            // 
-            this.lblPrecioT.AutoSize = true;
-            this.lblPrecioT.Location = new System.Drawing.Point(543, 264);
-            this.lblPrecioT.Name = "lblPrecioT";
-            this.lblPrecioT.Size = new System.Drawing.Size(71, 15);
-            this.lblPrecioT.TabIndex = 33;
-            this.lblPrecioT.Text = "Precio total:";
-            // 
             // lblObservaciones
             // 
             this.lblObservaciones.AutoSize = true;
-            this.lblObservaciones.Location = new System.Drawing.Point(540, 30);
+            this.lblObservaciones.Location = new System.Drawing.Point(540, 53);
             this.lblObservaciones.Name = "lblObservaciones";
             this.lblObservaciones.Size = new System.Drawing.Size(91, 15);
             this.lblObservaciones.TabIndex = 32;
@@ -320,7 +318,7 @@ namespace RecOptico
             // 
             // txtObservaciones
             // 
-            this.txtObservaciones.Location = new System.Drawing.Point(543, 50);
+            this.txtObservaciones.Location = new System.Drawing.Point(543, 77);
             this.txtObservaciones.Multiline = true;
             this.txtObservaciones.Name = "txtObservaciones";
             this.txtObservaciones.Size = new System.Drawing.Size(176, 111);
@@ -428,7 +426,6 @@ namespace RecOptico
             this.txtEsfeDerCerca.Name = "txtEsfeDerCerca";
             this.txtEsfeDerCerca.Size = new System.Drawing.Size(113, 34);
             this.txtEsfeDerCerca.TabIndex = 21;
-            this.txtEsfeDerCerca.Text = "-1.25";
             this.txtEsfeDerCerca.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // splitContainer6
@@ -455,7 +452,6 @@ namespace RecOptico
             this.txtCilDerCerca.Name = "txtCilDerCerca";
             this.txtCilDerCerca.Size = new System.Drawing.Size(113, 34);
             this.txtCilDerCerca.TabIndex = 21;
-            this.txtCilDerCerca.Text = "-1.25";
             this.txtCilDerCerca.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtEjeDerCerca
@@ -465,7 +461,6 @@ namespace RecOptico
             this.txtEjeDerCerca.Name = "txtEjeDerCerca";
             this.txtEjeDerCerca.Size = new System.Drawing.Size(113, 34);
             this.txtEjeDerCerca.TabIndex = 20;
-            this.txtEjeDerCerca.Text = "-1.25";
             this.txtEjeDerCerca.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // splitContainer7
@@ -491,7 +486,6 @@ namespace RecOptico
             this.txtEsfeIzqCerca.Name = "txtEsfeIzqCerca";
             this.txtEsfeIzqCerca.Size = new System.Drawing.Size(113, 34);
             this.txtEsfeIzqCerca.TabIndex = 21;
-            this.txtEsfeIzqCerca.Text = "-1.25";
             this.txtEsfeIzqCerca.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // splitContainer8
@@ -518,7 +512,6 @@ namespace RecOptico
             this.txtCilIzqCerca.Name = "txtCilIzqCerca";
             this.txtCilIzqCerca.Size = new System.Drawing.Size(113, 34);
             this.txtCilIzqCerca.TabIndex = 21;
-            this.txtCilIzqCerca.Text = "-1.25";
             this.txtCilIzqCerca.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtEjeIzqCerca
@@ -528,7 +521,6 @@ namespace RecOptico
             this.txtEjeIzqCerca.Name = "txtEjeIzqCerca";
             this.txtEjeIzqCerca.Size = new System.Drawing.Size(113, 34);
             this.txtEjeIzqCerca.TabIndex = 20;
-            this.txtEjeIzqCerca.Text = "-1.25";
             this.txtEjeIzqCerca.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // grpLejos
@@ -565,7 +557,6 @@ namespace RecOptico
             this.txtEsfeDerLejos.Name = "txtEsfeDerLejos";
             this.txtEsfeDerLejos.Size = new System.Drawing.Size(113, 34);
             this.txtEsfeDerLejos.TabIndex = 21;
-            this.txtEsfeDerLejos.Text = "-1.25";
             this.txtEsfeDerLejos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // splitContainer2
@@ -592,7 +583,6 @@ namespace RecOptico
             this.txtCilDerLejos.Name = "txtCilDerLejos";
             this.txtCilDerLejos.Size = new System.Drawing.Size(113, 34);
             this.txtCilDerLejos.TabIndex = 21;
-            this.txtCilDerLejos.Text = "-1.25";
             this.txtCilDerLejos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtEjeDerLejos
@@ -602,7 +592,6 @@ namespace RecOptico
             this.txtEjeDerLejos.Name = "txtEjeDerLejos";
             this.txtEjeDerLejos.Size = new System.Drawing.Size(113, 34);
             this.txtEjeDerLejos.TabIndex = 20;
-            this.txtEjeDerLejos.Text = "-1.25";
             this.txtEjeDerLejos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // splitContainer3
@@ -628,7 +617,6 @@ namespace RecOptico
             this.txtEsfeIzqLejos.Name = "txtEsfeIzqLejos";
             this.txtEsfeIzqLejos.Size = new System.Drawing.Size(113, 34);
             this.txtEsfeIzqLejos.TabIndex = 21;
-            this.txtEsfeIzqLejos.Text = "-1.25";
             this.txtEsfeIzqLejos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // splitContainer4
@@ -655,7 +643,6 @@ namespace RecOptico
             this.txtCilIzqLejos.Name = "txtCilIzqLejos";
             this.txtCilIzqLejos.Size = new System.Drawing.Size(113, 34);
             this.txtCilIzqLejos.TabIndex = 21;
-            this.txtCilIzqLejos.Text = "-1.25";
             this.txtCilIzqLejos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtEjeIzqLejos
@@ -665,7 +652,6 @@ namespace RecOptico
             this.txtEjeIzqLejos.Name = "txtEjeIzqLejos";
             this.txtEjeIzqLejos.Size = new System.Drawing.Size(113, 34);
             this.txtEjeIzqLejos.TabIndex = 20;
-            this.txtEjeIzqLejos.Text = "-1.25";
             this.txtEjeIzqLejos.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // cmdAgregar
@@ -687,25 +673,6 @@ namespace RecOptico
             this.cmdAtras.Text = "&Atras";
             this.cmdAtras.UseVisualStyleBackColor = true;
             this.cmdAtras.Click += new System.EventHandler(this.cmdAtras_Click);
-            // 
-            // txtDireccion
-            // 
-            this.txtDireccion.Location = new System.Drawing.Point(10, 117);
-            this.txtDireccion.Multiline = true;
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(350, 71);
-            this.txtDireccion.TabIndex = 36;
-            this.txtDireccion.Text = "\r\n";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(143, 90);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 24);
-            this.label2.TabIndex = 37;
-            this.label2.Text = "Dirección";
             // 
             // AgregarPaciente
             // 
@@ -830,8 +797,6 @@ namespace RecOptico
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button cmdAgregar;
         private System.Windows.Forms.Button cmdAtras;
-        private System.Windows.Forms.TextBox txtPrecioT;
-        private System.Windows.Forms.Label lblPrecioT;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtDireccion;
     }
