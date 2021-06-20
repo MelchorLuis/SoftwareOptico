@@ -26,7 +26,7 @@ namespace RecOptico
             {
                 if(Usuario.Receta(System.Decimal.Parse(txtEsfeDerLejos.Text), System.Decimal.Parse(txtCilDerLejos.Text), System.Decimal.Parse(txtEjeDerLejos.Text), System.Decimal.Parse(txtEsfeIzqLejos.Text), System.Decimal.Parse(txtCilIzqLejos.Text), 
                     System.Decimal.Parse(txtEjeIzqLejos.Text), System.Decimal.Parse(txtEsfeDerCerca.Text), System.Decimal.Parse(txtCilDerCerca.Text), System.Decimal.Parse(txtEjeDerCerca.Text), System.Decimal.Parse(txtEsfeIzqCerca.Text), System.Decimal.Parse(txtCilIzqCerca.Text), 
-                    System.Decimal.Parse(txtEjeIzqCerca.Text), System.Decimal.Parse(txtDIP.Text), txtObservaciones.Text) > 0)
+                    System.Decimal.Parse(txtEjeIzqCerca.Text), System.Decimal.Parse(txtDIP.Text), txtObservaciones.Text, txtNumCel.Text) > 0)
                 {
                     MessageBox.Show("Paciente añadido con exito!");
                 }

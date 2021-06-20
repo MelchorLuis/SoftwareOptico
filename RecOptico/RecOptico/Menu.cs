@@ -41,5 +41,12 @@ namespace RecOptico
             Agendar Age = new Agendar();
             Age.Show();
         }
+
+        private void cmdPagos_Click(object sender, EventArgs e)
+        {
+            AgregarPago pago = new AgregarPago();
+            pago.Show();
+            this.Hide();
+        }
     }
 }
