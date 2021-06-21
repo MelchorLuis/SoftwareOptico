@@ -4,6 +4,10 @@
     "\\RecOptico",
     "\\RecOptico\\RecOptico"
   ],
+<<<<<<< HEAD
   "SelectedNode": "\\RecOptico\\RecOptico\\HistorialdePacientes.cs",
+=======
+  "SelectedNode": "\\RecOptico\\RecOptico.sln",
+>>>>>>> 52bd8d2727d7f7ff8d6a2d8031eaebd22be75465
   "PreviewInSolutionExplorer": false
 }

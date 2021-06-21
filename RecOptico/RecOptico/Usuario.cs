@@ -28,21 +28,28 @@ namespace RecOptico
             Con.Close();
             return resultado;
         }
-        public static int Receta(decimal EsfeDerLejos, decimal CilDerLejos, decimal EjeDerLejos, decimal EsfeIzqLejos, decimal CilIzqLejos, decimal EjeIzqLejos,
-            decimal EsfeDerCerca, decimal CilDerCerca, decimal EjeDerCerca, decimal EsfeIzqCerca, decimal CilIzqCerca, decimal EjeIzqCerca,
-            decimal DIP, String Observaciones, String Telefono)
+        public static int Receta(String EsfeDerLejos, String CilDerLejos, String EjeDerLejos, String EsfeIzqLejos, String CilIzqLejos, String EjeIzqLejos,
+            String EsfeDerCerca, String CilDerCerca, String EjeDerCerca, String EsfeIzqCerca, String CilIzqCerca, String EjeIzqCerca,
+            String DIP, String Observaciones, String Telefono)
         {
             int resultado = 0;
-            int resultado1 = 0;
+            int resultado2 = 0;
+           
             SqlConnection Con = DBComun.ObtenerConexion();
+            SqlCommand select = new SqlCommand(string.Format("select * from Pacientes"), Con);
+            SqlDataReader reader = select.ExecuteReader();
+            while (reader.Read())
+            {
+                resultado2 = reader.GetInt32(0);
+            }
+            reader.Close();
+
             SqlCommand comando2 = new SqlCommand(string.Format("Insert into Examen (EsferaLejosDerecho, CilindroLejosDerecho, EjeLejosDerecho, EsferaLejosIzquierdo, CilindroLejosIzquierdo, EjeLejosIzquierdo, " +
-                "EsferaCercaDerecho, CilindroCercaDerecho, EjeCercaDerecho, EsferaCercaIzquierdo, CilindroCercaIzquierda, EjeCercaIzquierdo, DIP, Observaciones)" +
-                "values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}', '{13}')",
+                "EsferaCercaDerecho, CilindroCercaDerecho, EjeCercaDerecho, EsferaCercaIzquierdo, CilindroCercaIzquierda, EjeCercaIzquierdo, DIP, ID_Pacientes, Observaciones)" +
+                "values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}', '{13}', '{14}')",
                 EsfeDerLejos, CilDerLejos, EjeDerLejos, EsfeIzqLejos, CilIzqLejos, EjeIzqLejos,
-                EsfeDerCerca, CilDerCerca, EjeDerCerca, EsfeIzqCerca, CilIzqCerca, EjeIzqCerca, DIP, Observaciones),Con);
-            SqlCommand id = new SqlCommand(string.Format("Insert into Examen (ID_Pacientes) values select ID_Pacientes where Telefono_Pacientes = '{0}'",Telefono),Con);
+                EsfeDerCerca, CilDerCerca, EjeDerCerca, EsfeIzqCerca, CilIzqCerca, EjeIzqCerca, DIP, resultado2.ToString(), Observaciones),Con);
             resultado = comando2.ExecuteNonQuery();
-            resultado1 = id.ExecuteNonQuery();
             Con.Close();
             return resultado;
         }

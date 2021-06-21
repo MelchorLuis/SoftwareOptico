@@ -91,6 +91,7 @@ C:\Users\Dell\source\repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\obj\De
 C:\Users\Dell\source\repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.pdb
 C:\Users\Dell\source\repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.Agendar.resources
 >>>>>>> 96fcaf7108c3b87bd9ef0f69a2a9325e6f222cc6
+C:\Users\Dell\source\repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.Calendario.resources
 C:\Users\52664\Desktop\SoftwareOptico\RecOptico\RecOptico\bin\Debug\RecOptico.exe.config
 C:\Users\52664\Desktop\SoftwareOptico\RecOptico\RecOptico\bin\Debug\RecOptico.exe
 C:\Users\52664\Desktop\SoftwareOptico\RecOptico\RecOptico\bin\Debug\RecOptico.pdb
@@ -110,3 +111,8 @@ C:\Users\52664\Desktop\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.cs
 C:\Users\52664\Desktop\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.csproj.CoreCompileInputs.cache
 C:\Users\52664\Desktop\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.exe
 C:\Users\52664\Desktop\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.pdb
+C:\Users\52664\Desktop\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.frmExamen.resources
+>>>>>>> 1f49750f7c2c8ea9dbe293972c8b49106064ed6c
+C:\Users\Dell\source\repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.AgregarPago.resources
+C:\Users\Dell\source\repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.frmExamen.resources
+C:\Users\Dell\source\repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.Historial_de_pagos.resources
