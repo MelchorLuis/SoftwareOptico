@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace RecOptico
 {
@@ -19,6 +20,7 @@ namespace RecOptico
 
         private void cmdConfirmar_Click(object sender, EventArgs e)
         {
+            
             AgregarPaciente agregar = new AgregarPaciente();
             if (Usuario.Receta(txtEsfeDerLejos.Text, txtCilDerLejos.Text, txtEjeDerLejos.Text, txtEsfeIzqLejos.Text, txtCilIzqLejos.Text,
                     txtEjeIzqLejos.Text, txtEsfeDerCerca.Text, txtCilDerCerca.Text, txtEjeDerCerca.Text, txtEsfeIzqCerca.Text, txtCilIzqCerca.Text,
@@ -30,6 +32,7 @@ namespace RecOptico
             {
                 MessageBox.Show("Hubo un error");
             }
+           
         }
     }
 }
