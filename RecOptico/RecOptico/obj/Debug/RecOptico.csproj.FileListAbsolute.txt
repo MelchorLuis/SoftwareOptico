@@ -110,3 +110,4 @@ C:\Users\52664\Desktop\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.cs
 C:\Users\52664\Desktop\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.csproj.CoreCompileInputs.cache
 C:\Users\52664\Desktop\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.exe
 C:\Users\52664\Desktop\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.pdb
+C:\Users\52664\Desktop\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.frmExamen.resources
