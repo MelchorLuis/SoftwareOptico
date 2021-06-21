@@ -34,14 +34,21 @@ namespace RecOptico
         {
             int resultado = 0;
             int resultado2 = 0;
+           
             SqlConnection Con = DBComun.ObtenerConexion();
-            SqlCommand select = new SqlCommand(string.Format("select max(ID_Pacientes) from Pacientes"),Con);
-            resultado2 = select.ExecuteNonQuery();
+            SqlCommand select = new SqlCommand(string.Format("select * from Pacientes"), Con);
+            SqlDataReader reader = select.ExecuteReader();
+            while (reader.Read())
+            {
+                resultado2 = reader.GetInt32(0);
+            }
+            reader.Close();
+
             SqlCommand comando2 = new SqlCommand(string.Format("Insert into Examen (EsferaLejosDerecho, CilindroLejosDerecho, EjeLejosDerecho, EsferaLejosIzquierdo, CilindroLejosIzquierdo, EjeLejosIzquierdo, " +
                 "EsferaCercaDerecho, CilindroCercaDerecho, EjeCercaDerecho, EsferaCercaIzquierdo, CilindroCercaIzquierda, EjeCercaIzquierdo, DIP, ID_Pacientes, Observaciones)" +
                 "values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}', '{13}', '{14}')",
                 EsfeDerLejos, CilDerLejos, EjeDerLejos, EsfeIzqLejos, CilIzqLejos, EjeIzqLejos,
-                EsfeDerCerca, CilDerCerca, EjeDerCerca, EsfeIzqCerca, CilIzqCerca, EjeIzqCerca, DIP, resultado2, Observaciones),Con);
+                EsfeDerCerca, CilDerCerca, EjeDerCerca, EsfeIzqCerca, CilIzqCerca, EjeIzqCerca, DIP, resultado2.ToString(), Observaciones),Con);
             resultado = comando2.ExecuteNonQuery();
             Con.Close();
             return resultado;
