@@ -28,17 +28,20 @@ namespace RecOptico
             Con.Close();
             return resultado;
         }
-        public static int Receta(decimal EsfeDerLejos, decimal CilDerLejos, decimal EjeDerLejos, decimal EsfeIzqLejos, decimal CilIzqLejos, decimal EjeIzqLejos,
-            decimal EsfeDerCerca, decimal CilDerCerca, decimal EjeDerCerca, decimal EsfeIzqCerca, decimal CilIzqCerca, decimal EjeIzqCerca,
-            decimal DIP, String Observaciones)
+        public static int Receta(String EsfeDerLejos, String CilDerLejos, String EjeDerLejos, String EsfeIzqLejos, String CilIzqLejos, String EjeIzqLejos,
+            String EsfeDerCerca, String CilDerCerca, String EjeDerCerca, String EsfeIzqCerca, String CilIzqCerca, String EjeIzqCerca,
+            String DIP, String Observaciones, String Telefono)
         {
             int resultado = 0;
+            int resultado2 = 0;
             SqlConnection Con = DBComun.ObtenerConexion();
+            SqlCommand select = new SqlCommand(string.Format("select max(ID_Pacientes) from Pacientes"),Con);
+            resultado2 = select.ExecuteNonQuery();
             SqlCommand comando2 = new SqlCommand(string.Format("Insert into Examen (EsferaLejosDerecho, CilindroLejosDerecho, EjeLejosDerecho, EsferaLejosIzquierdo, CilindroLejosIzquierdo, EjeLejosIzquierdo, " +
-                "EsferaCercaDerecho, CilindroCercaDerecho, EjeCercaDerecho, EsferaCercaIzquierdo, CilindroCercaIzquierda, EjeCercaIzquierdo, DIP, Observaciones)" +
-                "values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}', '{13}')",
+                "EsferaCercaDerecho, CilindroCercaDerecho, EjeCercaDerecho, EsferaCercaIzquierdo, CilindroCercaIzquierda, EjeCercaIzquierdo, DIP, ID_Pacientes, Observaciones)" +
+                "values ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}', '{13}', '{14}')",
                 EsfeDerLejos, CilDerLejos, EjeDerLejos, EsfeIzqLejos, CilIzqLejos, EjeIzqLejos,
-                EsfeDerCerca, CilDerCerca, EjeDerCerca, EsfeIzqCerca, CilIzqCerca, EjeIzqCerca, DIP, Observaciones),Con);
+                EsfeDerCerca, CilDerCerca, EjeDerCerca, EsfeIzqCerca, CilIzqCerca, EjeIzqCerca, DIP, resultado2, Observaciones),Con);
             resultado = comando2.ExecuteNonQuery();
             Con.Close();
             return resultado;
@@ -48,6 +51,15 @@ namespace RecOptico
             int resultado = 0;
             SqlConnection Con = DBComun.ObtenerConexion();
             SqlCommand Comando = new SqlCommand(string.Format("delete from Pacientes where ID_Pacientes = '{0}'", pFolio),Con);
+            resultado = Comando.ExecuteNonQuery();
+            Con.Close();
+            return resultado;
+        }
+        public static int Buscar(int pFolio)
+        {
+            int resultado = 0;
+            SqlConnection Con = DBComun.ObtenerConexion();
+            SqlCommand Comando = new SqlCommand(string.Format("select * from Historial_Pagos where ID_Pacientes = '{0}'", pFolio), Con);
             resultado = Comando.ExecuteNonQuery();
             Con.Close();
             return resultado;
