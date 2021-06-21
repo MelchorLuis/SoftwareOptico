@@ -34,7 +34,7 @@ namespace RecOptico
             this.lblHistorial = new System.Windows.Forms.Label();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -86,14 +86,14 @@ namespace RecOptico
             this.dataGridView1.Size = new System.Drawing.Size(379, 299);
             this.dataGridView1.TabIndex = 1;
             // 
-            // button1
+            // btnSalir
             // 
-            this.button1.Location = new System.Drawing.Point(567, 325);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Salir";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSalir.Location = new System.Drawing.Point(567, 325);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.TabIndex = 2;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
             // 
             // Calendario
             // 
@@ -101,7 +101,7 @@ namespace RecOptico
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(798, 360);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.Name = "Calendario";
@@ -120,6 +120,6 @@ namespace RecOptico
         private System.Windows.Forms.Label lblHistorial;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSalir;
     }
 }
