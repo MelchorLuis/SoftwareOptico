@@ -20,6 +20,9 @@ namespace RecOptico
 
         private void cmdIngresar_Click(object sender, EventArgs e)
         {
+            Agendar a = new Agendar();
+            a.Show();
+            
             if (Usuario.Autentificar(txtCorreo.Text, txtContra.Text) > 0)
             {
                 Menu m = new Menu();
