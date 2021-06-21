@@ -44,6 +44,7 @@ namespace RecOptico
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -206,12 +207,25 @@ namespace RecOptico
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.AliceBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(172, 333);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(113, 69);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Agenda";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
-            this.ClientSize = new System.Drawing.Size(444, 350);
+            this.ClientSize = new System.Drawing.Size(444, 405);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.cmdPagos);
             this.Controls.Add(this.cmdLogOff);
@@ -256,5 +270,6 @@ namespace RecOptico
         private System.Windows.Forms.Label cmdLogOff;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Button cmdPagos;
+        private System.Windows.Forms.Button button1;
     }
 }
