@@ -29,6 +29,7 @@ namespace RecOptico
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Historial_de_pagos));
             this.lblTexto = new System.Windows.Forms.Label();
             this.dtwHistorialPagos = new System.Windows.Forms.DataGridView();
             this.cmdAtras = new System.Windows.Forms.Button();
@@ -73,6 +74,7 @@ namespace RecOptico
             this.Controls.Add(this.dtwHistorialPagos);
             this.Controls.Add(this.lblTexto);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Historial_de_pagos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
