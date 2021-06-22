@@ -1,13 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\RecOptico",
-    "\\RecOptico\\RecOptico"
+    "\\RecOptico"
   ],
-<<<<<<< HEAD
-  "SelectedNode": "\\RecOptico\\RecOptico\\Agendar.cs",
-=======
   "SelectedNode": "\\RecOptico\\RecOptico.sln",
->>>>>>> ee7677b8c75a0173665539130819b3130c3482e3
   "PreviewInSolutionExplorer": false
 }
