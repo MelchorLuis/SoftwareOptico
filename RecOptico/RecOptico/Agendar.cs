@@ -105,5 +105,11 @@ namespace RecOptico
             }
             Con.Close();
         }
+
+        private void Agendar_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+
+        }
     }
 }

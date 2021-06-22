@@ -200,7 +200,7 @@ namespace RecOptico
             // 
             // cmdAgregar
             // 
-            this.cmdAgregar.Location = new System.Drawing.Point(161, 291);
+            this.cmdAgregar.Location = new System.Drawing.Point(610, 292);
             this.cmdAgregar.Name = "cmdAgregar";
             this.cmdAgregar.Size = new System.Drawing.Size(143, 23);
             this.cmdAgregar.TabIndex = 18;
@@ -210,7 +210,7 @@ namespace RecOptico
             // 
             // cmdAtras
             // 
-            this.cmdAtras.Location = new System.Drawing.Point(452, 291);
+            this.cmdAtras.Location = new System.Drawing.Point(12, 292);
             this.cmdAtras.Name = "cmdAtras";
             this.cmdAtras.Size = new System.Drawing.Size(143, 23);
             this.cmdAtras.TabIndex = 19;
@@ -232,6 +232,7 @@ namespace RecOptico
             this.Name = "AgregarPaciente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AgregarPaciente";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AgregarPaciente_FormClosing);
             this.grpDatos.ResumeLayout(false);
             this.grpDatos.PerformLayout();
             this.grpComunicacion.ResumeLayout(false);

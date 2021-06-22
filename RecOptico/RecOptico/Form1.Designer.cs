@@ -31,8 +31,7 @@ namespace RecOptico
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.cmdRegistrar = new System.Windows.Forms.Button();
             this.cmdIngresar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.txtContra = new System.Windows.Forms.TextBox();
@@ -42,6 +41,8 @@ namespace RecOptico
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cmdCerrar = new System.Windows.Forms.Button();
+            this.lblOlvidar = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -50,8 +51,9 @@ namespace RecOptico
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.PowderBlue;
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.lblOlvidar);
+            this.panel1.Controls.Add(this.cmdCerrar);
+            this.panel1.Controls.Add(this.cmdRegistrar);
             this.panel1.Controls.Add(this.cmdIngresar);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.txtContra);
@@ -65,26 +67,15 @@ namespace RecOptico
             this.panel1.Size = new System.Drawing.Size(369, 482);
             this.panel1.TabIndex = 3;
             // 
-            // button1
+            // cmdRegistrar
             // 
-            this.button1.Location = new System.Drawing.Point(214, 378);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(83, 40);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Registrarse";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(108, 321);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(162, 16);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "¿Olvidaste tu contraseña?";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.cmdRegistrar.Location = new System.Drawing.Point(214, 378);
+            this.cmdRegistrar.Name = "cmdRegistrar";
+            this.cmdRegistrar.Size = new System.Drawing.Size(83, 40);
+            this.cmdRegistrar.TabIndex = 9;
+            this.cmdRegistrar.Text = "Registrarse";
+            this.cmdRegistrar.UseVisualStyleBackColor = true;
+            this.cmdRegistrar.Click += new System.EventHandler(this.button1_Click);
             // 
             // cmdIngresar
             // 
@@ -176,6 +167,28 @@ namespace RecOptico
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // cmdCerrar
+            // 
+            this.cmdCerrar.Location = new System.Drawing.Point(280, 437);
+            this.cmdCerrar.Name = "cmdCerrar";
+            this.cmdCerrar.Size = new System.Drawing.Size(75, 23);
+            this.cmdCerrar.TabIndex = 12;
+            this.cmdCerrar.Text = "Salir";
+            this.cmdCerrar.UseVisualStyleBackColor = true;
+            // 
+            // lblOlvidar
+            // 
+            this.lblOlvidar.AutoSize = true;
+            this.lblOlvidar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOlvidar.LinkColor = System.Drawing.Color.Black;
+            this.lblOlvidar.Location = new System.Drawing.Point(108, 326);
+            this.lblOlvidar.Name = "lblOlvidar";
+            this.lblOlvidar.Size = new System.Drawing.Size(162, 16);
+            this.lblOlvidar.TabIndex = 13;
+            this.lblOlvidar.TabStop = true;
+            this.lblOlvidar.Text = "¿Olvidaste tu contraseña?";
+            this.lblOlvidar.Click += new System.EventHandler(this.label3_Click);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -205,11 +218,12 @@ namespace RecOptico
         private System.Windows.Forms.TextBox txtContra;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtCorreo;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button cmdRegistrar;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button cmdCerrar;
+        private System.Windows.Forms.LinkLabel lblOlvidar;
     }
 }
 

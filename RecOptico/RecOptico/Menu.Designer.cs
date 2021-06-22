@@ -32,22 +32,25 @@ namespace RecOptico
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.label1 = new System.Windows.Forms.Label();
             this.cmdAgregar = new System.Windows.Forms.Button();
-            this.cmdModificar = new System.Windows.Forms.Button();
             this.cmdAgenda = new System.Windows.Forms.Button();
             this.cmdHistorial = new System.Windows.Forms.Button();
             this.lblUsuario = new System.Windows.Forms.Label();
-            this.cmdLogOff = new System.Windows.Forms.Label();
             this.cmdPagos = new System.Windows.Forms.Button();
+            this.cmdHistorialP = new System.Windows.Forms.Button();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+<<<<<<< HEAD
+            this.lblCerarSesion = new System.Windows.Forms.LinkLabel();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+=======
             this.button1 = new System.Windows.Forms.Button();
+>>>>>>> 8c386377db7de3c304f05b3ece15bda7a1d79bf4
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -74,18 +77,6 @@ namespace RecOptico
             this.cmdAgregar.Text = "Agregar paciente";
             this.cmdAgregar.UseVisualStyleBackColor = false;
             this.cmdAgregar.Click += new System.EventHandler(this.cmdAgregar_Click);
-            // 
-            // cmdModificar
-            // 
-            this.cmdModificar.BackColor = System.Drawing.Color.AliceBlue;
-            this.cmdModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdModificar.Location = new System.Drawing.Point(299, 96);
-            this.cmdModificar.Name = "cmdModificar";
-            this.cmdModificar.Size = new System.Drawing.Size(113, 69);
-            this.cmdModificar.TabIndex = 3;
-            this.cmdModificar.Text = "Modificar paciente";
-            this.cmdModificar.UseVisualStyleBackColor = false;
-            this.cmdModificar.Click += new System.EventHandler(this.cmdModificar_Click);
             // 
             // cmdAgenda
             // 
@@ -120,21 +111,11 @@ namespace RecOptico
             this.lblUsuario.TabIndex = 10;
             this.lblUsuario.Text = "Usuario:";
             // 
-            // cmdLogOff
-            // 
-            this.cmdLogOff.AutoSize = true;
-            this.cmdLogOff.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdLogOff.Location = new System.Drawing.Point(12, 31);
-            this.cmdLogOff.Name = "cmdLogOff";
-            this.cmdLogOff.Size = new System.Drawing.Size(80, 13);
-            this.cmdLogOff.TabIndex = 11;
-            this.cmdLogOff.Text = "¿Cerrar sesión?";
-            // 
             // cmdPagos
             // 
             this.cmdPagos.BackColor = System.Drawing.Color.AliceBlue;
             this.cmdPagos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdPagos.Location = new System.Drawing.Point(110, 258);
+            this.cmdPagos.Location = new System.Drawing.Point(199, 269);
             this.cmdPagos.Name = "cmdPagos";
             this.cmdPagos.Size = new System.Drawing.Size(113, 69);
             this.cmdPagos.TabIndex = 12;
@@ -142,11 +123,34 @@ namespace RecOptico
             this.cmdPagos.UseVisualStyleBackColor = false;
             this.cmdPagos.Click += new System.EventHandler(this.cmdPagos_Click);
             // 
+            // cmdHistorialP
+            // 
+            this.cmdHistorialP.BackColor = System.Drawing.Color.AliceBlue;
+            this.cmdHistorialP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmdHistorialP.Location = new System.Drawing.Point(299, 96);
+            this.cmdHistorialP.Name = "cmdHistorialP";
+            this.cmdHistorialP.Size = new System.Drawing.Size(113, 69);
+            this.cmdHistorialP.TabIndex = 14;
+            this.cmdHistorialP.Text = "Historial de pacientes";
+            this.cmdHistorialP.UseVisualStyleBackColor = false;
+            this.cmdHistorialP.Click += new System.EventHandler(this.cmdHistorialP_Click);
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.Pink;
+            this.pictureBox7.Image = global::RecOptico.Properties.Resources.order_history;
+            this.pictureBox7.Location = new System.Drawing.Point(238, 96);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(64, 69);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 15;
+            this.pictureBox7.TabStop = false;
+            // 
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Pink;
             this.pictureBox6.Image = global::RecOptico.Properties.Resources.Imagenpago;
-            this.pictureBox6.Location = new System.Drawing.Point(50, 258);
+            this.pictureBox6.Location = new System.Drawing.Point(139, 269);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(64, 69);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -163,17 +167,6 @@ namespace RecOptico
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 9;
             this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Pink;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(238, 96);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(64, 69);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 8;
-            this.pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
@@ -207,10 +200,22 @@ namespace RecOptico
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+<<<<<<< HEAD
+            // lblCerarSesion
+            // 
+            this.lblCerarSesion.AutoSize = true;
+            this.lblCerarSesion.LinkColor = System.Drawing.Color.Black;
+            this.lblCerarSesion.Location = new System.Drawing.Point(12, 31);
+            this.lblCerarSesion.Name = "lblCerarSesion";
+            this.lblCerarSesion.Size = new System.Drawing.Size(80, 13);
+            this.lblCerarSesion.TabIndex = 16;
+            this.lblCerarSesion.TabStop = true;
+            this.lblCerarSesion.Text = "¿Cerrar sesión?";
+            this.lblCerarSesion.Click += new System.EventHandler(this.cmdLogOff_Click);
+=======
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.AliceBlue;
-            this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(172, 333);
             this.button1.Name = "button1";
@@ -219,35 +224,39 @@ namespace RecOptico
             this.button1.Text = "Agenda";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+>>>>>>> 8c386377db7de3c304f05b3ece15bda7a1d79bf4
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
+<<<<<<< HEAD
+            this.ClientSize = new System.Drawing.Size(444, 350);
+            this.Controls.Add(this.lblCerarSesion);
+            this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.cmdHistorialP);
+=======
             this.ClientSize = new System.Drawing.Size(444, 405);
             this.Controls.Add(this.button1);
+>>>>>>> 8c386377db7de3c304f05b3ece15bda7a1d79bf4
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.cmdPagos);
-            this.Controls.Add(this.cmdLogOff);
             this.Controls.Add(this.lblUsuario);
             this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.cmdHistorial);
             this.Controls.Add(this.cmdAgenda);
-            this.Controls.Add(this.cmdModificar);
             this.Controls.Add(this.cmdAgregar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Menu_FormClosing);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -261,17 +270,20 @@ namespace RecOptico
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button cmdAgregar;
-        private System.Windows.Forms.Button cmdModificar;
         private System.Windows.Forms.Button cmdAgenda;
         private System.Windows.Forms.Button cmdHistorial;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Label lblUsuario;
-        private System.Windows.Forms.Label cmdLogOff;
+        public System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Button cmdPagos;
+<<<<<<< HEAD
+        private System.Windows.Forms.Button cmdHistorialP;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.LinkLabel lblCerarSesion;
+=======
         private System.Windows.Forms.Button button1;
+>>>>>>> 8c386377db7de3c304f05b3ece15bda7a1d79bf4
     }
 }
