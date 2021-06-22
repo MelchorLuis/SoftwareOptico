@@ -80,9 +80,58 @@ Observaciones varchar(300)
 )
 
 CREATE TABLE HistorialPagos(
-ID_Paciente INT NOT NULL PRIMARY KEY,
-TotalPagar varchar(10),
-Abono_Pago varchar(10),
-Faltante_Pago varchar(10),
+ID_Pago INT  NOT NULL PRIMARY KEY,
+TotalPagar decimal,
+Abono_Pago decimal,
+Faltante_Pago decimal,
 Estado_Pago varchar(10)
 )
+drop table HistorialPagos
+create procedure sp_MostrarPacientes
+as
+select * from Pacientes
+go
+
+create procedure sp_MostrarPagos
+as
+select * from HistorialPagos
+go
+
+create trigger Operaciones
+on HistorialPagos
+for insert
+as 
+begin
+declare @TotalPagar decimal
+declare @Abono_Pago decimal
+declare @Faltante_Pago decimal
+declare @Estado_Pago varchar(10)
+set @TotalPagar = (select TotalPagar from HistorialPagos)
+set @Abono_Pago = (select Abono_Pago from HistorialPagos)
+set @Faltante_Pago = (select Faltante_Pago from HistorialPagos)
+set @Estado_Pago = (select Estado_Pago from HistorialPagos)
+set @Faltante_Pago = @TotalPagar - @Abono_Pago
+if @Faltante_Pago = 0
+set @Estado_Pago = 'PAGADO'
+update HistorialPagos set Faltante_Pago = @Faltante_Pago, Estado_Pago = @Estado_Pago where  ID_Pago = (select ID_Pago from inserted)
+end
+drop trigger Operaciones
+
+create trigger Operaciones2
+on HistorialPagos
+for update
+as 
+begin
+declare @TotalPagar decimal
+declare @Abono_Pago decimal
+declare @Faltante_Pago decimal
+declare @Estado_Pago varchar(10)
+set @TotalPagar = (select TotalPagar from HistorialPagos)
+set @Abono_Pago = (select Abono_Pago from HistorialPagos)
+set @Faltante_Pago = (select Faltante_Pago from HistorialPagos)
+set @Estado_Pago = (select Estado_Pago from HistorialPagos)
+set @Faltante_Pago = @TotalPagar - @Abono_Pago
+if @Faltante_Pago = 0
+set @Estado_Pago = 'PAGADO'
+update HistorialPagos set Faltante_Pago = @Faltante_Pago, Estado_Pago = @Estado_Pago where  ID_Pago = (select ID_Pago from inserted)
+end

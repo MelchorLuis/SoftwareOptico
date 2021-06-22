@@ -35,12 +35,12 @@ namespace RecOptico
             this.txtFolio = new System.Windows.Forms.TextBox();
             this.lblPrecioLente = new System.Windows.Forms.Label();
             this.txtPrecioLente = new System.Windows.Forms.TextBox();
-            this.txtMonto = new System.Windows.Forms.TextBox();
-            this.lblMonto = new System.Windows.Forms.Label();
             this.lblAbono = new System.Windows.Forms.Label();
             this.txtAbono = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.cmdDesplegar = new System.Windows.Forms.Button();
+            this.cmdAgregarPago = new System.Windows.Forms.Button();
+            this.cmdOtro = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblPagos
@@ -58,7 +58,6 @@ namespace RecOptico
             this.cbPagos.FormattingEnabled = true;
             this.cbPagos.Items.AddRange(new object[] {
             "Añadir precio de lente",
-            "Contado",
             "Abono"});
             this.cbPagos.Location = new System.Drawing.Point(131, 101);
             this.cbPagos.Name = "cbPagos";
@@ -101,24 +100,6 @@ namespace RecOptico
             this.txtPrecioLente.TabIndex = 5;
             this.txtPrecioLente.Visible = false;
             // 
-            // txtMonto
-            // 
-            this.txtMonto.Location = new System.Drawing.Point(280, 190);
-            this.txtMonto.Name = "txtMonto";
-            this.txtMonto.Size = new System.Drawing.Size(100, 20);
-            this.txtMonto.TabIndex = 6;
-            this.txtMonto.Visible = false;
-            // 
-            // lblMonto
-            // 
-            this.lblMonto.AutoSize = true;
-            this.lblMonto.Location = new System.Drawing.Point(195, 193);
-            this.lblMonto.Name = "lblMonto";
-            this.lblMonto.Size = new System.Drawing.Size(79, 13);
-            this.lblMonto.TabIndex = 7;
-            this.lblMonto.Text = "Monto a pagar:";
-            this.lblMonto.Visible = false;
-            // 
             // lblAbono
             // 
             this.lblAbono.AutoSize = true;
@@ -156,18 +137,40 @@ namespace RecOptico
             this.cmdDesplegar.UseVisualStyleBackColor = true;
             this.cmdDesplegar.Click += new System.EventHandler(this.cmdDesplegar_Click);
             // 
+            // cmdAgregarPago
+            // 
+            this.cmdAgregarPago.Location = new System.Drawing.Point(141, 228);
+            this.cmdAgregarPago.Name = "cmdAgregarPago";
+            this.cmdAgregarPago.Size = new System.Drawing.Size(97, 23);
+            this.cmdAgregarPago.TabIndex = 12;
+            this.cmdAgregarPago.Text = "Agregar pago";
+            this.cmdAgregarPago.UseVisualStyleBackColor = true;
+            this.cmdAgregarPago.Visible = false;
+            this.cmdAgregarPago.Click += new System.EventHandler(this.cmdAgregarPago_Click);
+            // 
+            // cmdOtro
+            // 
+            this.cmdOtro.Location = new System.Drawing.Point(127, 138);
+            this.cmdOtro.Name = "cmdOtro";
+            this.cmdOtro.Size = new System.Drawing.Size(125, 23);
+            this.cmdOtro.TabIndex = 13;
+            this.cmdOtro.Text = "Hacer otra operación";
+            this.cmdOtro.UseVisualStyleBackColor = true;
+            this.cmdOtro.Visible = false;
+            this.cmdOtro.Click += new System.EventHandler(this.cmdOtro_Click);
+            // 
             // AgregarPago
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
-            this.ClientSize = new System.Drawing.Size(397, 233);
+            this.ClientSize = new System.Drawing.Size(397, 263);
+            this.Controls.Add(this.cmdOtro);
+            this.Controls.Add(this.cmdAgregarPago);
             this.Controls.Add(this.cmdDesplegar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtAbono);
             this.Controls.Add(this.lblAbono);
-            this.Controls.Add(this.lblMonto);
-            this.Controls.Add(this.txtMonto);
             this.Controls.Add(this.txtPrecioLente);
             this.Controls.Add(this.lblPrecioLente);
             this.Controls.Add(this.txtFolio);
@@ -190,11 +193,11 @@ namespace RecOptico
         private System.Windows.Forms.TextBox txtFolio;
         private System.Windows.Forms.Label lblPrecioLente;
         private System.Windows.Forms.TextBox txtPrecioLente;
-        private System.Windows.Forms.TextBox txtMonto;
-        private System.Windows.Forms.Label lblMonto;
         private System.Windows.Forms.Label lblAbono;
         private System.Windows.Forms.TextBox txtAbono;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button cmdDesplegar;
+        private System.Windows.Forms.Button cmdAgregarPago;
+        private System.Windows.Forms.Button cmdOtro;
     }
 }

@@ -259,9 +259,5 @@ namespace RecOptico
         private System.Windows.Forms.Button cmdHistorialP;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.LinkLabel lblCerarSesion;
-<<<<<<< HEAD
-=======
-
->>>>>>> ee7677b8c75a0173665539130819b3130c3482e3
     }
 }

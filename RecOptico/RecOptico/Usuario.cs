@@ -142,27 +142,13 @@ namespace RecOptico
             conexion.Close();
             return resultado;
         }
-        public static string Existe(string pUsuario)
+        public static int Existe(int ID_P)
         {
-            SqlCommand cmd;
-            string us = "";
+            int us = 0;
             SqlConnection conn = DBComun.ObtenerConexion();
-            string query = "select ID_Usuario from Usuario where username = " + pUsuario;
-            try
-            {
-                cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@username", pUsuario);
-                conn.Open();
-                us = cmd.ExecuteScalar().ToString();
-            }
-            catch (Exception ex)
-            {
-
-            }
-            finally
-            {
-                conn.Close();
-            }
+            SqlCommand comando = new SqlCommand(string.Format("select ID_Pacientes from Pacientes where ID_Pacientes = '{0}'", ID_P), conn);
+            us = comando.ExecuteNonQuery();
+            conn.Close();
             return us;
         }
         public static string ValidarCorreo(string Correo)
@@ -180,10 +166,40 @@ namespace RecOptico
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Unico"].ConnectionString);
             SqlDataAdapter da = new SqlDataAdapter("sp_MostrarPacientes",con);
             da.SelectCommand.CommandType = CommandType.StoredProcedure;
-            DataTable dt = new DataTable();
-            da.Fill(dt);
+            DataTable dto = new DataTable();
+            da.Fill(dto);
             con.Close();
-            return dt;
+            return dto;
+        }
+
+        public DataTable MostrarPago()
+        {
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Unico"].ConnectionString);
+            SqlDataAdapter da = new SqlDataAdapter("sp_MostrarPagos", con);
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            DataTable dto = new DataTable();
+            da.Fill(dto);
+            con.Close();
+            return dto;
+        }
+
+        public static int TotalLente(int ID_P, decimal TotalPago)
+        {
+            int resultado = 0;
+            SqlConnection Con = DBComun.ObtenerConexion();
+            SqlCommand insert = new SqlCommand(string.Format("insert into HistorialPagos (ID_Pago, TotalPagar) values ('{0}','{1}')", ID_P, TotalPago), Con);
+            resultado = insert.ExecuteNonQuery();
+            Con.Close();
+            return resultado;
+        }
+        public static int PalAbono(int ID_P, decimal Abono)
+        {
+            int resultado = 0;
+            SqlConnection Con = DBComun.ObtenerConexion();
+            SqlCommand update = new SqlCommand(string.Format("update HistorialPagos set Abono_Pago = '{0}' where ID_Pago = '{1}'", Abono, ID_P), Con);
+            resultado = update.ExecuteNonQuery();
+            Con.Close();
+            return resultado;
         }
     }
 }
