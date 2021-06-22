@@ -50,40 +50,40 @@ namespace RecOptico
         private void cmdRegistrar_Click(object sender, EventArgs e)
         {
             SqlConnection Con = DBComun.ObtenerConexion();
-            SqlCommand Comando = new SqlCommand(string.Format("Insert Into Agenda (Nombre_Pac, Telefono_Pac, Nombre_Enc, Hora, Fecha) values ('{0}','{1}','{2}','{3}',{4})",cbPaciente.SelectedItem,txtTelefono.Text, cbEncargado.SelectedItem, cbHora.SelectedItem, 
-                Calendario.SelectionRange.Start.ToShortDateString()), Con);
+            SqlCommand Comando = new SqlCommand(string.Format("Update Agenda SET Nombre_Pac='{0}', Telefono_Pac = '{1}', Nombre_Enc= '{2}', Hora='{3}', Procedimiento= '{4}' where Fecha='{5}'",cbPaciente.SelectedItem,txtTelefono.Text, cbEncargado.SelectedItem, cbHora.SelectedItem, txtProcedimiento.Text, fecha), Con);
             Comando.ExecuteNonQuery();
             Con.Close();
             MessageBox.Show("Se guardo la cita");
         }
-
+        string fecha = "";
         private void button1_Click(object sender, EventArgs e)
         {
             SqlConnection Con = DBComun.ObtenerConexion();
-            string fecha = Calendario.SelectionStart.Date.ToString("yyyy-MM-dd");
-            SqlCommand cmd = new SqlCommand(string.Format("Select * from Agenda where Fecha={0}",fecha), Con);
-            cmd.Parameters.AddWithValue("Fecha", fecha);
+            fecha = Calendario.SelectionStart.Date.ToString("yyyy-MM-dd");
 
-            int count = Convert.ToInt32(cmd.ExecuteReader());
-            if (count < 0) 
-            {
-                SqlCommand Comando = new SqlCommand(string.Format("Insert Into Agenda (Fecha) values ('{0}')", fecha), Con);
-                Comando.ExecuteNonQuery();
-                Con.Close();
-                MessageBox.Show("Se guardo la cita");
-                cbEncargado.Visible = true;
-                cbPaciente.Visible = true;
-                cbHora.Visible = true;
-                txtTelefono.Visible = true;
-                txtProcedimiento.Visible = true;
-                lblEncargado.Visible = true;
-                lblHora.Visible = true;
-                lblPaciente.Visible = true;
-                lblProcedimiento.Visible = true;
-                label2.Visible = true;
-                Hora();
-            }
+
+
+
+            SqlCommand Comando = new SqlCommand(string.Format("Insert Into Agenda (Fecha) values ('{0}')", fecha), Con);
+            Comando.ExecuteNonQuery();
+            Con.Close();
+            MessageBox.Show("Se guardo la cita");
+            cbEncargado.Visible = true;
+            cbPaciente.Visible = true;
+            cbHora.Visible = true;
+            txtTelefono.Visible = true;
+            txtProcedimiento.Visible = true;
+            lblEncargado.Visible = true;
+            lblHora.Visible = true;
+            lblPaciente.Visible = true;
+            lblProcedimiento.Visible = true;
+            label2.Visible = true;
+            button1.Visible = true;
+            cmdRegistrar.Visible = true;
+            cmdAtras.Visible = false;
+            Hora();
         }
+        
 
         void Hora() 
         {
@@ -92,7 +92,7 @@ namespace RecOptico
             
             // Hora
             SqlCommand Coma = new SqlCommand(string.Format("Select * from Horas,Agenda where Agenda.Id_Calendario " +
-                "= Horas.ID_Calendario and disponible=null"), Con);
+                "= Horas.ID_Calendario and disponible is NULL"), Con);
             SqlDataAdapter da2 = new SqlDataAdapter(Coma);
 
             DataSet ds2 = new DataSet();
