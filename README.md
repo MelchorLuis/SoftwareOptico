@@ -1,5 +1,5 @@
 # SoftwareOptico
-##Repositorio para el proyecto de Optometría
+## Repositorio para el proyecto de Optometría
 
 La administración de empleados, clientes, ingresos, citas, entre otros, son partes fundamentales para llevar un buen control de tu negocio. Está situación afecta mucho a negocios pequeños o independientes, que la mayoría de las veces, no cuentan con el apoyo de los servicios gubernamentales, por lo que los lleva a tener un mal control de su empresa.
 Las aplicaciones actuales son algo complejas y poco intuitivas para el usuario. Decidimos desarrollar un software para poder administrar los datos necesarios de un optometrista con su propio consultorio y con varios empleados trabajando.
