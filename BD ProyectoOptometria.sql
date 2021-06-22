@@ -173,4 +173,5 @@ BEGIN
   (7, (select Fecha from inserted))
 END
 
-select * from Agenda
+select * from Pacientes
+drop table Pacientes

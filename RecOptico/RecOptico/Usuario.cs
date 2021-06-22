@@ -83,11 +83,14 @@ namespace RecOptico
         {
             int resultado = 0;
             int resultado2 = 0;
+            int resultado3 = 0;
             SqlConnection Con = DBComun.ObtenerConexion();
             SqlCommand Comando = new SqlCommand(string.Format("delete from Pacientes where ID_Pacientes = '{0}'", pFolio),Con);
             SqlCommand Comando2 = new SqlCommand(string.Format("delete from Examen where ID_Pacientes = '{0}'", pFolio), Con);
+            SqlCommand Comando3 = new SqlCommand(string.Format("delete from HistorialPAgos where ID_Pago = '{0}'", pFolio), Con);
             resultado = Comando.ExecuteNonQuery();
             resultado2 = Comando2.ExecuteNonQuery();
+            resultado3 = Comando3.ExecuteNonQuery();
             Con.Close();
             return resultado;
         }
