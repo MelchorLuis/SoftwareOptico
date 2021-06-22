@@ -91,3 +91,4 @@ C:\Users\Dell\source\repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\obj\De
 C:\Users\Dell\source\repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.pdb
 C:\Users\Dell\source\repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.Agendar.resources
 >>>>>>> 96fcaf7108c3b87bd9ef0f69a2a9325e6f222cc6
+C:\Users\luis-\Source\Repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.Agendar.resources
