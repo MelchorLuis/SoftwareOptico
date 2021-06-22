@@ -22,12 +22,26 @@ namespace RecOptico
 
         private void frmHistorial_Load(object sender, EventArgs e)
         {
-
+     
         }
 
         private void cmdModificarPaciente_Click(object sender, EventArgs e)
         {
-
+            if (txtBusquedaPaciente.Text != "")
+            {
+                if (Usuario.Modificar(Convert.ToInt32(txtBusquedaPaciente.Text)) == 0)
+                {
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("No se encontró al paciente");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Porfavor ingrese un folio");
+            }
         }
 
         private void dtwHistorialPacientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -37,13 +51,29 @@ namespace RecOptico
         
         private void cmdEliminarPaciente_Click(object sender, EventArgs e)
         {
-            if(Usuario.Eliminar(Convert.ToInt32(txtBusquedaPaciente.Text)) > 0)
+            if (txtBusquedaPaciente.Text != "")
             {
-                MessageBox.Show("Se eliminó el paciente");
+                    if (Usuario.Eliminar(Convert.ToInt32(txtBusquedaPaciente.Text)) > 0)
+                    {
+                        DialogResult dialogResult = MessageBox.Show("¿Desea elimar el registro?", "Eliminar paciente", MessageBoxButtons.YesNo);
+                        if (dialogResult == DialogResult.Yes)
+                        {
+                            MessageBox.Show("Se eliminó el paciente");
+
+                            Usuario usu = new Usuario();
+                            dtwHistorialPacientes.DataSource = usu.MostrarPacientes();
+                            txtBusquedaPaciente.Text = "";
+                            txtBusquedaPaciente.Focus();
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se encontró el paciente");
+                    }
             }
             else
             {
-                MessageBox.Show("No se encontró el paciente");
+                MessageBox.Show("Porfavor ingrese un folio");
             }
         }
 

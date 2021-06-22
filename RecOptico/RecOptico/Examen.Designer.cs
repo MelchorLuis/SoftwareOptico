@@ -501,7 +501,7 @@ namespace RecOptico
             // 
             // cmdConfirmar
             // 
-            this.cmdConfirmar.Location = new System.Drawing.Point(223, 425);
+            this.cmdConfirmar.Location = new System.Drawing.Point(389, 430);
             this.cmdConfirmar.Name = "cmdConfirmar";
             this.cmdConfirmar.Size = new System.Drawing.Size(75, 23);
             this.cmdConfirmar.TabIndex = 16;

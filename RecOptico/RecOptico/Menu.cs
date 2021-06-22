@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace RecOptico
 {
@@ -16,6 +18,7 @@ namespace RecOptico
         {
             InitializeComponent();
         }
+       
 
         private void cmdHistorial_Click(object sender, EventArgs e)
         {
@@ -46,6 +49,24 @@ namespace RecOptico
         {
             AgregarPago pago = new AgregarPago();
             pago.Show();
+            this.Hide();
+        }
+
+        private void cmdHistorialP_Click(object sender, EventArgs e)
+        {
+            Usuario usu = new Usuario();
+            frmHistorial Historial_Pacientes = new frmHistorial();
+
+            Historial_Pacientes.Show();
+            this.Hide();
+
+            Historial_Pacientes.dtwHistorialPacientes.DataSource = usu.MostrarPacientes();
+        }
+
+        private void cmdLogOff_Click(object sender, EventArgs e)
+        {
+            frmLogin Login = new frmLogin();
+            Login.Show();
             this.Hide();
         }
     }
