@@ -29,6 +29,7 @@ namespace RecOptico
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModificarPaciente));
             this.cmdActulizar = new System.Windows.Forms.Button();
             this.grpComunicacion = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -252,6 +253,7 @@ namespace RecOptico
             this.Controls.Add(this.grpDatos);
             this.Controls.Add(this.lblTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "ModificarPaciente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

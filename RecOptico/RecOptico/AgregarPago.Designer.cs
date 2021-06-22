@@ -29,6 +29,7 @@ namespace RecOptico
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AgregarPago));
             this.lblPagos = new System.Windows.Forms.Label();
             this.cbPagos = new System.Windows.Forms.ComboBox();
             this.lblFolio = new System.Windows.Forms.Label();
@@ -191,6 +192,7 @@ namespace RecOptico
             this.Controls.Add(this.cbPagos);
             this.Controls.Add(this.lblPagos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "AgregarPago";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -29,18 +29,19 @@ namespace RecOptico
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Agendar));
             this.Calendario = new System.Windows.Forms.MonthCalendar();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lblHistorial = new System.Windows.Forms.Label();
+            this.cmdAtras = new System.Windows.Forms.Button();
             this.cbHora = new System.Windows.Forms.ComboBox();
             this.lblHora = new System.Windows.Forms.Label();
             this.lblPaciente = new System.Windows.Forms.Label();
             this.lblEncargado = new System.Windows.Forms.Label();
             this.cbPaciente = new System.Windows.Forms.ComboBox();
             this.cbEncargado = new System.Windows.Forms.ComboBox();
-            this.cmdAtras = new System.Windows.Forms.Button();
             this.cmdRegistrar = new System.Windows.Forms.Button();
             this.lblProcedimiento = new System.Windows.Forms.Label();
             this.txtProcedimiento = new System.Windows.Forms.TextBox();
@@ -99,6 +100,17 @@ namespace RecOptico
             this.lblHistorial.Size = new System.Drawing.Size(146, 39);
             this.lblHistorial.TabIndex = 2;
             this.lblHistorial.Text = "Agendar";
+            // 
+            // cmdAtras
+            // 
+            this.cmdAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmdAtras.Location = new System.Drawing.Point(17, 428);
+            this.cmdAtras.Name = "cmdAtras";
+            this.cmdAtras.Size = new System.Drawing.Size(95, 34);
+            this.cmdAtras.TabIndex = 18;
+            this.cmdAtras.Text = "&Atras";
+            this.cmdAtras.UseVisualStyleBackColor = true;
+            this.cmdAtras.Click += new System.EventHandler(this.cmdAtras_Click);
             // 
             // cbHora
             // 
@@ -162,17 +174,6 @@ namespace RecOptico
             this.cbEncargado.Size = new System.Drawing.Size(196, 21);
             this.cbEncargado.TabIndex = 9;
             this.cbEncargado.Visible = false;
-            // 
-            // cmdAtras
-            // 
-            this.cmdAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdAtras.Location = new System.Drawing.Point(17, 428);
-            this.cmdAtras.Name = "cmdAtras";
-            this.cmdAtras.Size = new System.Drawing.Size(95, 34);
-            this.cmdAtras.TabIndex = 18;
-            this.cmdAtras.Text = "&Atras";
-            this.cmdAtras.UseVisualStyleBackColor = true;
-            this.cmdAtras.Click += new System.EventHandler(this.cmdAtras_Click);
             // 
             // cmdRegistrar
             // 
@@ -244,6 +245,7 @@ namespace RecOptico
             this.Controls.Add(this.cbHora);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Agendar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
