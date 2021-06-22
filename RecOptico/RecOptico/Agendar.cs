@@ -48,15 +48,22 @@ namespace RecOptico
 
         private void cmdRegistrar_Click(object sender, EventArgs e)
         {
-            string fecha = Calendario.SelectionStart.Date.ToString("yyyy-MM-dd");
+            if (cbHora.Text != "" && cbEncargado.Text != "" && cbPaciente.Text != "" && txtTelefono.Text != "" && txtProcedimiento.Text != "")
+            {
+                string fecha = Calendario.SelectionStart.Date.ToString("yyyy-MM-dd");
 
-            SqlConnection Con = DBComun.ObtenerConexion();
-            SqlCommand Comando = new SqlCommand(string.Format("Update Horas SET Nombre_Pac='{0}', Telefono_Pac = '{1}', Nombre_Enc= '{2}', Hora='{3}', Procedimiento= '{4}' where Fecha='{5}' and Hora='{3}'", cbPaciente.SelectedItem, txtTelefono.Text, cbEncargado.SelectedItem, cbHora.SelectedItem, txtProcedimiento.Text, fecha), Con);
-            Comando.ExecuteNonQuery();
-            Con.Close();
-            cbHora.Items.Clear();
-            Calendario.Enabled = true;
-            MessageBox.Show("Se guardo la cita");
+                SqlConnection Con = DBComun.ObtenerConexion();
+                SqlCommand Comando = new SqlCommand(string.Format("Update Horas SET Nombre_Pac='{0}', Telefono_Pac = '{1}', Nombre_Enc= '{2}', Hora='{3}', Procedimiento= '{4}' where Fecha='{5}' and Hora='{3}'", cbPaciente.SelectedItem, txtTelefono.Text, cbEncargado.SelectedItem, cbHora.SelectedItem, txtProcedimiento.Text, fecha), Con);
+                Comando.ExecuteNonQuery();
+                Con.Close();
+                cbHora.Items.Clear();
+                Calendario.Enabled = true;
+                MessageBox.Show("Se guardo la cita");
+            }
+            else
+            {
+                MessageBox.Show("Por favor llenar todos los campos");
+            }
         }
         
         private void button1_Click(object sender, EventArgs e)
