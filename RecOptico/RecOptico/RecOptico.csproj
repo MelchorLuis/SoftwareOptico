@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -58,12 +59,36 @@
     <Compile Include="AgregarPaciente.Designer.cs">
       <DependentUpon>AgregarPaciente.cs</DependentUpon>
     </Compile>
+    <Compile Include="AgregarPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarPago.Designer.cs">
+      <DependentUpon>AgregarPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calendario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendario.Designer.cs">
+      <DependentUpon>Calendario.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBComun.cs" />
+    <Compile Include="Examen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Examen.Designer.cs">
+      <DependentUpon>Examen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Historial de pagos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Historial de pagos.Designer.cs">
+      <DependentUpon>Historial de pagos.cs</DependentUpon>
     </Compile>
     <Compile Include="HistorialdePacientes.cs">
       <SubType>Form</SubType>
@@ -76,6 +101,12 @@
     </Compile>
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarPaciente.Designer.cs">
+      <DependentUpon>ModificarPaciente.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -98,14 +129,29 @@
     <EmbeddedResource Include="AgregarPaciente.resx">
       <DependentUpon>AgregarPaciente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AgregarPago.resx">
+      <DependentUpon>AgregarPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendario.resx">
+      <DependentUpon>Calendario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Examen.resx">
+      <DependentUpon>Examen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Historial de pagos.resx">
+      <DependentUpon>Historial de pagos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HistorialdePacientes.resx">
       <DependentUpon>HistorialdePacientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarPaciente.resx">
+      <DependentUpon>ModificarPaciente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -150,6 +196,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\User_icon_BLACK-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagenpago.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order-history.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

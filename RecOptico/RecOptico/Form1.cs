@@ -19,12 +19,14 @@ namespace RecOptico
         }
 
         private void cmdIngresar_Click(object sender, EventArgs e)
-        {
+        {   
             if (Usuario.Autentificar(txtCorreo.Text, txtContra.Text) > 0)
             {
                 Menu m = new Menu();
                 m.Show();
                 this.Hide();
+
+                m.lblUsuario.Text = "Usuario: " +  txtCorreo.Text;
             }
             else
             {
@@ -43,7 +45,7 @@ namespace RecOptico
         {
             RecuperarContraseña recu = new RecuperarContraseña();
             recu.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -53,6 +55,15 @@ namespace RecOptico
             this.Hide();
         }
 
-      
+        private void cmdCerrar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
     }
 }

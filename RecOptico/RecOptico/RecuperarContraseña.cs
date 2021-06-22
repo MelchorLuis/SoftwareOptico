@@ -30,7 +30,7 @@ namespace RecOptico
             f.Show();
         
         }
-        SqlConnection conexion = new SqlConnection("Data Source=DESKTOP-MO6T4C3\\SQLEXPRESS; Integrated Security = SSPI; Initial Catalog = Proyecto");
+        SqlConnection conexion = new SqlConnection("Data Source=DESKTOP-VCFFGU0; Integrated Security = SSPI; Initial Catalog = ProyectoOptometria");
 
         private void cmdVerificar_Click(object sender, EventArgs e)
         {
@@ -83,6 +83,12 @@ namespace RecOptico
                 MessageBox.Show("El correo no existe");
                 conexion.Close();
             }
+
+        }
+
+        private void RecuperarContraseña_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
 
         }
     }
