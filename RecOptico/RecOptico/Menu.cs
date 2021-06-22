@@ -52,6 +52,10 @@ namespace RecOptico
             this.Hide();
         }
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> ee7677b8c75a0173665539130819b3130c3482e3
         private void cmdHistorialP_Click(object sender, EventArgs e)
         {
             Usuario usu = new Usuario();
@@ -74,11 +78,17 @@ namespace RecOptico
         {
             Calendario c = new Calendario();
             c.Show();
+
         }
 
         private void Menu_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

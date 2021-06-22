@@ -30,7 +30,7 @@ namespace RecOptico
             f.Show();
         
         }
-        SqlConnection conexion = new SqlConnection("Data Source=LAPTOP-NOLKORRR; Integrated Security = SSPI; Initial Catalog = ProyectoOptometria");
+        SqlConnection conexion = new SqlConnection("Data Source=DESKTOP-VCFFGU0; Integrated Security = SSPI; Initial Catalog = ProyectoOptometria");
 
         private void cmdVerificar_Click(object sender, EventArgs e)
         {
