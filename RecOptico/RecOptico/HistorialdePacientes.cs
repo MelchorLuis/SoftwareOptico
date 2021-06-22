@@ -82,5 +82,11 @@ namespace RecOptico
             this.Hide();
             menu.Show();
         }
+
+        private void frmHistorial_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+
+        }
     }
 }

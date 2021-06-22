@@ -46,5 +46,11 @@ namespace RecOptico
                 MessageBox.Show("Por favor de llenar todos los campos");
             }
         }
+
+        private void ModificarPaciente_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+
+        }
     }
 }

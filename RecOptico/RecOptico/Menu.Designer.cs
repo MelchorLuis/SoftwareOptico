@@ -43,12 +43,18 @@ namespace RecOptico
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+<<<<<<< HEAD
 
             this.lblCerarSesion = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
 
             this.button1 = new System.Windows.Forms.Button();
 
+=======
+            this.lblCerarSesion = new System.Windows.Forms.LinkLabel();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            this.button1 = new System.Windows.Forms.Button();
+>>>>>>> ee7677b8c75a0173665539130819b3130c3482e3
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -200,7 +206,10 @@ namespace RecOptico
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ee7677b8c75a0173665539130819b3130c3482e3
             // lblCerarSesion
             // 
             this.lblCerarSesion.AutoSize = true;
@@ -212,7 +221,10 @@ namespace RecOptico
             this.lblCerarSesion.TabStop = true;
             this.lblCerarSesion.Text = "¿Cerrar sesión?";
             this.lblCerarSesion.Click += new System.EventHandler(this.cmdLogOff_Click);
+<<<<<<< HEAD
 
+=======
+>>>>>>> ee7677b8c75a0173665539130819b3130c3482e3
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.AliceBlue;
@@ -223,22 +235,34 @@ namespace RecOptico
             this.button1.TabIndex = 14;
             this.button1.Text = "Agenda";
             this.button1.UseVisualStyleBackColor = false;
+<<<<<<< HEAD
 
+=======
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+>>>>>>> ee7677b8c75a0173665539130819b3130c3482e3
             // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
+<<<<<<< HEAD
 
+=======
+>>>>>>> ee7677b8c75a0173665539130819b3130c3482e3
             this.ClientSize = new System.Drawing.Size(444, 350);
             this.Controls.Add(this.lblCerarSesion);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.cmdHistorialP);
+<<<<<<< HEAD
 
             this.ClientSize = new System.Drawing.Size(444, 405);
             this.Controls.Add(this.button1);
 
+=======
+            this.ClientSize = new System.Drawing.Size(444, 405);
+            this.Controls.Add(this.button1);
+>>>>>>> ee7677b8c75a0173665539130819b3130c3482e3
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.cmdPagos);
             this.Controls.Add(this.lblUsuario);
@@ -283,5 +307,9 @@ namespace RecOptico
         private System.Windows.Forms.LinkLabel lblCerarSesion;
 
         private System.Windows.Forms.Button button1;
+<<<<<<< HEAD
+=======
+
+>>>>>>> ee7677b8c75a0173665539130819b3130c3482e3
     }
 }

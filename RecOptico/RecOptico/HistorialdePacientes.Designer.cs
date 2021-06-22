@@ -122,6 +122,7 @@ namespace RecOptico
             this.Name = "frmHistorial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Historial de Pacientes";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmHistorial_FormClosing);
             this.Load += new System.EventHandler(this.frmHistorial_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtwHistorialPacientes)).EndInit();
             this.ResumeLayout(false);

@@ -520,6 +520,7 @@ namespace RecOptico
             this.Controls.Add(this.grpExamen);
             this.Name = "frmExamen";
             this.Text = "Examen";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmExamen_FormClosing);
             this.grpExamen.ResumeLayout(false);
             this.grpExamen.PerformLayout();
             this.grpCerca.ResumeLayout(false);

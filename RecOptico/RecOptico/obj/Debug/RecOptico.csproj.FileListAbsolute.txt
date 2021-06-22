@@ -137,3 +137,4 @@ C:\Users\PC\Source\Repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\obj\Debu
 C:\Users\PC\Source\Repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.exe
 C:\Users\PC\Source\Repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.pdb
 C:\Users\PC\Source\Repos\MelchorLuis\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.ModificarPaciente.resources
+C:\Users\52664\Desktop\SoftwareOptico\RecOptico\RecOptico\obj\Debug\RecOptico.ModificarPaciente.resources

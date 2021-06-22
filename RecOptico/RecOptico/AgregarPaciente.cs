@@ -39,5 +39,11 @@ namespace RecOptico
             this.Hide();
             menu.Show();
         }
+
+        private void AgregarPaciente_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+
+        }
     }
 }

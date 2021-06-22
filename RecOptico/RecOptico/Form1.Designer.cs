@@ -175,7 +175,6 @@ namespace RecOptico
             this.cmdCerrar.TabIndex = 12;
             this.cmdCerrar.Text = "Salir";
             this.cmdCerrar.UseVisualStyleBackColor = true;
-            this.cmdCerrar.Click += new System.EventHandler(this.cmdCerrar_Click);
             // 
             // lblOlvidar
             // 

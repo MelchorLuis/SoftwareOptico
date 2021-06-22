@@ -37,5 +37,11 @@ namespace RecOptico
             }
            
         }
+
+        private void frmExamen_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+
+        }
     }
 }

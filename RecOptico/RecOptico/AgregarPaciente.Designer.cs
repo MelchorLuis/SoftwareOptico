@@ -232,6 +232,7 @@ namespace RecOptico
             this.Name = "AgregarPaciente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AgregarPaciente";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AgregarPaciente_FormClosing);
             this.grpDatos.ResumeLayout(false);
             this.grpDatos.PerformLayout();
             this.grpComunicacion.ResumeLayout(false);

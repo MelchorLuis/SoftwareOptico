@@ -53,5 +53,10 @@ namespace RecOptico
                 txtAbono.Visible = true;
             }
         }
+
+        private void AgregarPago_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+        }
     }
 }
