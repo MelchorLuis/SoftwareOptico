@@ -201,5 +201,6 @@ namespace RecOptico
             Con.Close();
             return resultado;
         }
+
     }
 }

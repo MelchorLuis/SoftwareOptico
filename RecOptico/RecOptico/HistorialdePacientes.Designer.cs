@@ -119,6 +119,8 @@ namespace RecOptico
             this.Controls.Add(this.lblBusqueda);
             this.Controls.Add(this.dtwHistorialPacientes);
             this.Controls.Add(this.lblHistorial);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "frmHistorial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Historial de Pacientes";

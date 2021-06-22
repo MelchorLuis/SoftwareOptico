@@ -177,7 +177,10 @@ namespace RecOptico
             this.Controls.Add(this.lblFolio);
             this.Controls.Add(this.cbPagos);
             this.Controls.Add(this.lblPagos);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "AgregarPago";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AgregarPago";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AgregarPago_FormClosing);
             this.ResumeLayout(false);

@@ -20,13 +20,13 @@ namespace RecOptico
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             frmLogin f = new frmLogin();
-            this.Close();
+            this.Hide();
             f.Show();
         
         }
@@ -75,7 +75,7 @@ namespace RecOptico
             try
             {
                 cliente.Send(msg);
-                MessageBox.Show("Se enviaron sus datos al correo "+txtCorreo.Text);
+                MessageBox.Show("Tu contraseña fue enviada al correo correctamente. "+txtCorreo.Text);
                 conexion.Close();
             }
             catch
@@ -88,7 +88,7 @@ namespace RecOptico
 
         private void RecuperarContraseña_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            
 
         }
     }

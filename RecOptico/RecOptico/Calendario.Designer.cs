@@ -104,7 +104,10 @@ namespace RecOptico
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Calendario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calendario";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Calendario_FormClosing);
             this.panel1.ResumeLayout(false);

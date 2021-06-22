@@ -251,7 +251,10 @@ namespace RecOptico
             this.Controls.Add(this.grpComunicacion);
             this.Controls.Add(this.grpDatos);
             this.Controls.Add(this.lblTitulo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "ModificarPaciente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModificarPaciente";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ModificarPaciente_FormClosing);
             this.grpComunicacion.ResumeLayout(false);
