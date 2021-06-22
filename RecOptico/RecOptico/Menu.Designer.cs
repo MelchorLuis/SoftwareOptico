@@ -228,6 +228,8 @@ namespace RecOptico
             this.Controls.Add(this.cmdAgregar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
@@ -259,9 +261,5 @@ namespace RecOptico
         private System.Windows.Forms.Button cmdHistorialP;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.LinkLabel lblCerarSesion;
-<<<<<<< HEAD
-=======
-
->>>>>>> ee7677b8c75a0173665539130819b3130c3482e3
     }
 }

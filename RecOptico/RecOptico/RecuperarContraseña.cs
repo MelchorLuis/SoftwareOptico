@@ -20,7 +20,7 @@ namespace RecOptico
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -30,7 +30,7 @@ namespace RecOptico
             f.Show();
         
         }
-        SqlConnection conexion = new SqlConnection("Data Source=DESKTOP-VCFFGU0; Integrated Security = SSPI; Initial Catalog = ProyectoOptometria");
+        SqlConnection conexion = new SqlConnection("Data Source=LAPTOP-NOLKORRR; Integrated Security = SSPI; Initial Catalog = ProyectoOptometria");
 
         private void cmdVerificar_Click(object sender, EventArgs e)
         {
@@ -75,7 +75,7 @@ namespace RecOptico
             try
             {
                 cliente.Send(msg);
-                MessageBox.Show("Se enviaron sus datos al correo "+txtCorreo.Text);
+                MessageBox.Show("Tu contraseña fue enviada al correo correctamente. "+txtCorreo.Text);
                 conexion.Close();
             }
             catch
@@ -88,7 +88,7 @@ namespace RecOptico
 
         private void RecuperarContraseña_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            
 
         }
     }

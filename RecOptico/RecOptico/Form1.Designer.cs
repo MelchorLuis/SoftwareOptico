@@ -78,6 +78,7 @@ namespace RecOptico
             this.lblOlvidar.TabIndex = 13;
             this.lblOlvidar.TabStop = true;
             this.lblOlvidar.Text = "¿Olvidaste tu contraseña?";
+            this.lblOlvidar.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblOlvidar_LinkClicked);
             this.lblOlvidar.Click += new System.EventHandler(this.label3_Click);
             // 
             // cmdCerrar
@@ -199,6 +200,8 @@ namespace RecOptico
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";

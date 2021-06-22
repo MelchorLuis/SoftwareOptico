@@ -23,14 +23,14 @@ namespace RecOptico
 
         private void cmdBuscar_Click(object sender, EventArgs e)
         {
-            if (Usuario.Buscar(Convert.ToInt32(txtBusquedaPaciente.Text)) > 0)
+            /*if (Usuario.Buscar(Convert.ToInt32(txtBusquedaPaciente.Text)) > 0)
             {
                 MessageBox.Show("Se encontré al paciente");
             }
             else
             {
                 MessageBox.Show("No se encontró el paciente");
-            }
+            }*/
         }
 
         private void cmdAtras_Click(object sender, EventArgs e)

@@ -518,7 +518,10 @@ namespace RecOptico
             this.Controls.Add(this.cmdConfirmar);
             this.Controls.Add(this.lblExamen);
             this.Controls.Add(this.grpExamen);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "frmExamen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Examen";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmExamen_FormClosing);
             this.grpExamen.ResumeLayout(false);

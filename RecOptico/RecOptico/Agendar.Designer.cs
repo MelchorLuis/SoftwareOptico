@@ -243,7 +243,10 @@ namespace RecOptico
             this.Controls.Add(this.lblHora);
             this.Controls.Add(this.cbHora);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Agendar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agendar";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Agendar_FormClosing);
             this.panel1.ResumeLayout(false);

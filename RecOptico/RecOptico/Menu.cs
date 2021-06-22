@@ -22,7 +22,13 @@ namespace RecOptico
 
         private void cmdHistorial_Click(object sender, EventArgs e)
         {
+            Usuario usu = new Usuario();
+            Historial_de_pagos Historial_Pagos = new Historial_de_pagos();
 
+            Historial_Pagos.Show();
+            this.Hide();
+
+            Historial_Pagos.dtwHistorialPagos.DataSource = usu.MostrarPago();
         }
 
         private void cmdAgregar_Click(object sender, EventArgs e)
@@ -51,11 +57,6 @@ namespace RecOptico
             pago.Show();
             this.Hide();
         }
-
-<<<<<<< HEAD
-
-=======
->>>>>>> ee7677b8c75a0173665539130819b3130c3482e3
         private void cmdHistorialP_Click(object sender, EventArgs e)
         {
             Usuario usu = new Usuario();

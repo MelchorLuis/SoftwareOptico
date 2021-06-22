@@ -62,8 +62,12 @@ namespace RecOptico
 
         private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            
         }
 
+        private void lblOlvidar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }
