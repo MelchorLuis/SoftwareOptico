@@ -26,7 +26,7 @@ namespace RecOptico
         private void button3_Click(object sender, EventArgs e)
         {
             frmLogin f = new frmLogin();
-            this.Close();
+            this.Hide();
             f.Show();
         
         }
