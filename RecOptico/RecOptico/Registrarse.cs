@@ -44,7 +44,7 @@ namespace RecOptico
                             {
                                 MessageBox.Show("Cuenta creada con éxito!");
                                 frmLogin Login = new frmLogin();
-                                this.Close();
+                                this.Hide();
                                 Login.Show();
                             }
                             else

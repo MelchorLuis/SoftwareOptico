@@ -173,5 +173,5 @@ BEGIN
   (7, (select Fecha from inserted))
 END
 
-select * from Pacientes
-drop table Pacientes
+select * from HistorialPagos
+
