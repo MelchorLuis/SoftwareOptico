@@ -78,15 +78,17 @@ namespace RecOptico
         {
             Calendario c = new Calendario();
             c.Show();
-<<<<<<< HEAD
 
-=======
         }
 
         private void Menu_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
->>>>>>> ee7677b8c75a0173665539130819b3130c3482e3
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

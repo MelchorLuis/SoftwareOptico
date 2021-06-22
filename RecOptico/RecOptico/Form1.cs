@@ -45,7 +45,7 @@ namespace RecOptico
         {
             RecuperarContraseña recu = new RecuperarContraseña();
             recu.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -59,5 +59,11 @@ namespace RecOptico
         {
             Close();
         }
+
+        private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
     }
 }
