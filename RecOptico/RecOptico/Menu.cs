@@ -52,6 +52,7 @@ namespace RecOptico
             this.Hide();
         }
 
+<<<<<<< HEAD
         private void cmdHistorialP_Click(object sender, EventArgs e)
         {
             Usuario usu = new Usuario();
@@ -68,6 +69,12 @@ namespace RecOptico
             frmLogin Login = new frmLogin();
             Login.Show();
             this.Hide();
+=======
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Calendario c = new Calendario();
+            c.Show();
+>>>>>>> 8c386377db7de3c304f05b3ece15bda7a1d79bf4
         }
     }
 }
