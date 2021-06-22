@@ -34,7 +34,7 @@ namespace RecOptico
             this.lblHistorial = new System.Windows.Forms.Label();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnSalir = new System.Windows.Forms.Button();
+            this.txtAtras = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -86,14 +86,15 @@ namespace RecOptico
             this.dataGridView1.Size = new System.Drawing.Size(379, 299);
             this.dataGridView1.TabIndex = 1;
             // 
-            // btnSalir
+            // txtAtras
             // 
-            this.btnSalir.Location = new System.Drawing.Point(567, 325);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 23);
-            this.btnSalir.TabIndex = 2;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
+            this.txtAtras.Location = new System.Drawing.Point(560, 325);
+            this.txtAtras.Name = "txtAtras";
+            this.txtAtras.Size = new System.Drawing.Size(75, 23);
+            this.txtAtras.TabIndex = 7;
+            this.txtAtras.Text = "Atras";
+            this.txtAtras.UseVisualStyleBackColor = true;
+            this.txtAtras.Click += new System.EventHandler(this.txtAtras_Click);
             // 
             // Calendario
             // 
@@ -101,7 +102,7 @@ namespace RecOptico
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(798, 360);
-            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.txtAtras);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -124,6 +125,6 @@ namespace RecOptico
         private System.Windows.Forms.Label lblHistorial;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button txtAtras;
     }
 }

@@ -49,6 +49,7 @@ namespace RecOptico
         {
             Agendar Age = new Agendar();
             Age.Show();
+            this.Hide();
         }
 
         private void cmdPagos_Click(object sender, EventArgs e)
@@ -90,6 +91,13 @@ namespace RecOptico
         private void button1_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void cmdCalendario_Click(object sender, EventArgs e)
+        {
+            Calendario Cal = new Calendario();
+            Cal.Show();
+            this.Hide();
         }
     }
 }
