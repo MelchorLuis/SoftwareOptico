@@ -43,14 +43,14 @@ namespace RecOptico
                 cbEncargado.Items.Add(row["Nombre_Usuario"].ToString());
             }
 
-            
+
             Con.Close();
         }
 
         private void cmdRegistrar_Click(object sender, EventArgs e)
         {
             SqlConnection Con = DBComun.ObtenerConexion();
-            SqlCommand Comando = new SqlCommand(string.Format("Update Agenda SET Nombre_Pac='{0}', Telefono_Pac = '{1}', Nombre_Enc= '{2}', Hora='{3}', Procedimiento= '{4}' where Fecha='{5}'",cbPaciente.SelectedItem,txtTelefono.Text, cbEncargado.SelectedItem, cbHora.SelectedItem, txtProcedimiento.Text, fecha), Con);
+            SqlCommand Comando = new SqlCommand(string.Format("Update Agenda SET Nombre_Pac='{0}', Telefono_Pac = '{1}', Nombre_Enc= '{2}', Hora='{3}', Procedimiento= '{4}' where Fecha='{5}'", cbPaciente.SelectedItem, txtTelefono.Text, cbEncargado.SelectedItem, cbHora.SelectedItem, txtProcedimiento.Text, fecha), Con);
             Comando.ExecuteNonQuery();
             Con.Close();
             MessageBox.Show("Se guardo la cita");
@@ -83,13 +83,13 @@ namespace RecOptico
             cmdAtras.Visible = false;
             Hora();
         }
-        
 
-        void Hora() 
+
+        void Hora()
         {
             SqlConnection Con = DBComun.ObtenerConexion();
 
-            
+
             // Hora
             SqlCommand Coma = new SqlCommand(string.Format("Select * from Horas,Agenda where Agenda.Id_Calendario " +
                 "= Horas.ID_Calendario and disponible is NULL"), Con);

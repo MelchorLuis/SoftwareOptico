@@ -85,5 +85,11 @@ namespace RecOptico
             }
 
         }
+
+        private void RecuperarContraseña_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+
+        }
     }
 }

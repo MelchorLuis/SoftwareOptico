@@ -196,6 +196,7 @@ namespace RecOptico
             this.Name = "RecuperarContraseña";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RecuperarContraseña";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RecuperarContraseña_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

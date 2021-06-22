@@ -53,9 +53,10 @@ namespace RecOptico
         {
             Registrarse Regi = new Registrarse();
             Regi.Show();
+     
             this.Hide();
         }
 
-      
+     
     }
 }
