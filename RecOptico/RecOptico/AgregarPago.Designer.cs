@@ -41,6 +41,7 @@ namespace RecOptico
             this.cmdDesplegar = new System.Windows.Forms.Button();
             this.cmdAgregarPago = new System.Windows.Forms.Button();
             this.cmdOtro = new System.Windows.Forms.Button();
+            this.cmdAtras = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblPagos
@@ -55,6 +56,7 @@ namespace RecOptico
             // 
             // cbPagos
             // 
+            this.cbPagos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbPagos.FormattingEnabled = true;
             this.cbPagos.Items.AddRange(new object[] {
             "Añadir precio de lente",
@@ -139,7 +141,7 @@ namespace RecOptico
             // 
             // cmdAgregarPago
             // 
-            this.cmdAgregarPago.Location = new System.Drawing.Point(141, 228);
+            this.cmdAgregarPago.Location = new System.Drawing.Point(288, 228);
             this.cmdAgregarPago.Name = "cmdAgregarPago";
             this.cmdAgregarPago.Size = new System.Drawing.Size(97, 23);
             this.cmdAgregarPago.TabIndex = 12;
@@ -159,12 +161,23 @@ namespace RecOptico
             this.cmdOtro.Visible = false;
             this.cmdOtro.Click += new System.EventHandler(this.cmdOtro_Click);
             // 
+            // cmdAtras
+            // 
+            this.cmdAtras.Location = new System.Drawing.Point(8, 228);
+            this.cmdAtras.Name = "cmdAtras";
+            this.cmdAtras.Size = new System.Drawing.Size(75, 23);
+            this.cmdAtras.TabIndex = 14;
+            this.cmdAtras.Text = "Atras";
+            this.cmdAtras.UseVisualStyleBackColor = true;
+            this.cmdAtras.Click += new System.EventHandler(this.cmdAtras_Click);
+            // 
             // AgregarPago
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(397, 263);
+            this.Controls.Add(this.cmdAtras);
             this.Controls.Add(this.cmdOtro);
             this.Controls.Add(this.cmdAgregarPago);
             this.Controls.Add(this.cmdDesplegar);
@@ -202,5 +215,6 @@ namespace RecOptico
         private System.Windows.Forms.Button cmdDesplegar;
         private System.Windows.Forms.Button cmdAgregarPago;
         private System.Windows.Forms.Button cmdOtro;
+        private System.Windows.Forms.Button cmdAtras;
     }
 }

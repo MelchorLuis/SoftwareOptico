@@ -39,7 +39,7 @@ namespace RecOptico
             // 
             this.lblTexto.AutoSize = true;
             this.lblTexto.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTexto.Location = new System.Drawing.Point(235, 28);
+            this.lblTexto.Location = new System.Drawing.Point(144, 28);
             this.lblTexto.Name = "lblTexto";
             this.lblTexto.Size = new System.Drawing.Size(278, 38);
             this.lblTexto.TabIndex = 0;
@@ -50,12 +50,12 @@ namespace RecOptico
             this.dtwHistorialPagos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtwHistorialPagos.Location = new System.Drawing.Point(15, 87);
             this.dtwHistorialPagos.Name = "dtwHistorialPagos";
-            this.dtwHistorialPagos.Size = new System.Drawing.Size(742, 305);
+            this.dtwHistorialPagos.Size = new System.Drawing.Size(541, 305);
             this.dtwHistorialPagos.TabIndex = 3;
             // 
             // cmdAtras
             // 
-            this.cmdAtras.Location = new System.Drawing.Point(637, 424);
+            this.cmdAtras.Location = new System.Drawing.Point(437, 424);
             this.cmdAtras.Name = "cmdAtras";
             this.cmdAtras.Size = new System.Drawing.Size(119, 44);
             this.cmdAtras.TabIndex = 10;
@@ -68,7 +68,7 @@ namespace RecOptico
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
-            this.ClientSize = new System.Drawing.Size(769, 499);
+            this.ClientSize = new System.Drawing.Size(575, 499);
             this.Controls.Add(this.cmdAtras);
             this.Controls.Add(this.dtwHistorialPagos);
             this.Controls.Add(this.lblTexto);
