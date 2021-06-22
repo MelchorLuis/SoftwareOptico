@@ -245,6 +245,7 @@ namespace RecOptico
             this.Controls.Add(this.panel1);
             this.Name = "Agendar";
             this.Text = "Agendar";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Agendar_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

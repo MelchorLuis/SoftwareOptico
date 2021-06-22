@@ -27,12 +27,21 @@ namespace RecOptico
                     txtEjeIzqCerca.Text, txtDIP.Text, txtObservaciones.Text, agregar.txtNumCel.Text) > 0)
             {
                 MessageBox.Show("El paciente y su examen fueron agregados");
+                Menu men = new Menu();
+                men.Show();
+                this.Hide();
             }
             else
             {
                 MessageBox.Show("Hubo un error");
             }
            
+        }
+
+        private void frmExamen_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+
         }
     }
 }

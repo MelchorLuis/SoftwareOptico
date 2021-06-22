@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using System.Data;
+using System.Configuration;
 
 namespace RecOptico
 {
@@ -53,14 +55,69 @@ namespace RecOptico
             Con.Close();
             return resultado;
         }
+        public static void Actulizar(String pNombres, String Apellidos, String Edad, String Telefono, String Correo, String Direccion, int pFolio)
+        {
+            int resultado = 0;
+            int resultado2 = 0;
+            int resultado3 = 0;
+            int resultado4 = 0;
+            int resultado5 = 0;
+            int resultado6 = 0;
+
+            SqlConnection con = DBComun.ObtenerConexion();
+            SqlCommand nom = new SqlCommand(string.Format("update Pacientes set Nombre_Pacientes = '{0}' where ID_Pacientes = '{1}'", pNombres,pFolio),con);
+            SqlCommand ape = new SqlCommand(string.Format("update Pacientes set Apellido_Pacientes = '{0}' where ID_Pacientes = '{1}'", Apellidos, pFolio), con);
+            SqlCommand edad = new SqlCommand(string.Format("update Pacientes set Edad_Pacientes = '{0}' where ID_Pacientes = '{1}'", Edad, pFolio), con);
+            SqlCommand tel = new SqlCommand(string.Format("update Pacientes set Telefono_Pacientes = '{0}' where ID_Pacientes = '{1}'", Telefono, pFolio), con);
+            SqlCommand mail = new SqlCommand(string.Format("update Pacientes set Correo_Pacientes = '{0}' where ID_Pacientes = '{1}'", Correo, pFolio), con);
+            SqlCommand dir = new SqlCommand(string.Format("update Pacientes set Direccion = '{0}' where ID_Pacientes = '{1}'", Direccion, pFolio), con);
+
+            resultado = nom.ExecuteNonQuery();
+            resultado2 = ape.ExecuteNonQuery();
+            resultado3 = edad.ExecuteNonQuery();
+            resultado4 = tel.ExecuteNonQuery();
+            resultado5 = mail.ExecuteNonQuery();
+            resultado6 = dir.ExecuteNonQuery();
+        }
         public static int Eliminar(int pFolio)
         {
             int resultado = 0;
+            int resultado2 = 0;
             SqlConnection Con = DBComun.ObtenerConexion();
             SqlCommand Comando = new SqlCommand(string.Format("delete from Pacientes where ID_Pacientes = '{0}'", pFolio),Con);
+            SqlCommand Comando2 = new SqlCommand(string.Format("delete from Examen where ID_Pacientes = '{0}'", pFolio), Con);
             resultado = Comando.ExecuteNonQuery();
+            resultado2 = Comando2.ExecuteNonQuery();
             Con.Close();
             return resultado;
+        }
+        public static int Modificar(int pFolio)
+        {
+            int res = 0;
+            ModificarPaciente Mod = new ModificarPaciente();
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Unico"].ConnectionString);
+            SqlCommand Comando = new SqlCommand(string.Format("select * from Pacientes where ID_Pacientes = {0}", pFolio), con);
+            con.Open();
+            SqlDataReader registro = Comando.ExecuteReader();
+            if (registro.Read())
+            {
+                Mod.txtNombres.Text = registro["Nombre_Pacientes"].ToString();
+                Mod.txtApellidos.Text = registro["Apellido_Pacientes"].ToString();
+                Mod.txtEdad.Text = registro["Edad_Pacientes"].ToString();
+                Mod.txtNumCel.Text = registro["Telefono_Pacientes"].ToString();
+                Mod.txtCorreo.Text = registro["Correo_Pacientes"].ToString();
+                Mod.txtDireccion.Text = registro["Direccion"].ToString();
+                Mod.txtID.Text = pFolio.ToString();
+                Mod.Show();
+                con.Close();
+                return res;
+            }
+            else
+            {
+                res = 1;
+                con.Close();
+                return res;
+            }
         }
         public static int Buscar(int pFolio)
         {
@@ -90,7 +147,7 @@ namespace RecOptico
             SqlCommand cmd;
             string us = "";
             SqlConnection conn = DBComun.ObtenerConexion();
-            string query = "select IDUsuario from usuario where username = " + pUsuario;
+            string query = "select ID_Usuario from Usuario where username = " + pUsuario;
             try
             {
                 cmd = new SqlCommand(query, conn);
@@ -116,6 +173,17 @@ namespace RecOptico
             Contrasena = Comando.ExecuteScalar().ToString();
             Con.Close();
             return Contrasena;
+        }
+
+        public DataTable MostrarPacientes()
+        {
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Unico"].ConnectionString);
+            SqlDataAdapter da = new SqlDataAdapter("sp_MostrarPacientes",con);
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            con.Close();
+            return dt;
         }
     }
 }

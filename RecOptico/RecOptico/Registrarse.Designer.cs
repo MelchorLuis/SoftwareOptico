@@ -134,6 +134,7 @@ namespace RecOptico
             // 
             // cmbSexo
             // 
+            this.cmbSexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbSexo.FormattingEnabled = true;
             this.cmbSexo.Items.AddRange(new object[] {
             "Femenino",
@@ -144,7 +145,6 @@ namespace RecOptico
             this.cmbSexo.Name = "cmbSexo";
             this.cmbSexo.Size = new System.Drawing.Size(335, 21);
             this.cmbSexo.TabIndex = 10;
-            this.cmbSexo.Text = "Femenino";
             // 
             // label4
             // 
@@ -260,6 +260,7 @@ namespace RecOptico
             this.Name = "Registrarse";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registrarse";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Registrarse_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

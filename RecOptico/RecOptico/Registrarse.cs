@@ -96,5 +96,11 @@ namespace RecOptico
             this.Hide();
             Log.Show();
         }
+
+        private void Registrarse_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+
+        }
     }
 }

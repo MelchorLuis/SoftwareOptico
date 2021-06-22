@@ -501,7 +501,7 @@ namespace RecOptico
             // 
             // cmdConfirmar
             // 
-            this.cmdConfirmar.Location = new System.Drawing.Point(223, 425);
+            this.cmdConfirmar.Location = new System.Drawing.Point(389, 430);
             this.cmdConfirmar.Name = "cmdConfirmar";
             this.cmdConfirmar.Size = new System.Drawing.Size(75, 23);
             this.cmdConfirmar.TabIndex = 16;
@@ -520,6 +520,7 @@ namespace RecOptico
             this.Controls.Add(this.grpExamen);
             this.Name = "frmExamen";
             this.Text = "Examen";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmExamen_FormClosing);
             this.grpExamen.ResumeLayout(false);
             this.grpExamen.PerformLayout();
             this.grpCerca.ResumeLayout(false);

@@ -176,6 +176,7 @@ namespace RecOptico
             this.Controls.Add(this.lblPagos);
             this.Name = "AgregarPago";
             this.Text = "AgregarPago";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AgregarPago_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

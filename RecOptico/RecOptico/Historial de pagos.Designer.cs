@@ -158,6 +158,7 @@ namespace RecOptico
             this.Controls.Add(this.lblTexto);
             this.Name = "Historial_de_pagos";
             this.Text = "Historial de pagos";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Historial_de_pagos_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.dtwHistorialPagos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

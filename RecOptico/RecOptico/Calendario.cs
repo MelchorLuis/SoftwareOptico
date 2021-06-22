@@ -31,5 +31,10 @@ namespace RecOptico
             dataGridView1.DataSource = tabla;
             Con.Close();
         }
+
+        private void Calendario_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
