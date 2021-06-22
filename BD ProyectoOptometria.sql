@@ -135,3 +135,42 @@ if @Faltante_Pago = 0
 set @Estado_Pago = 'PAGADO'
 update HistorialPagos set Faltante_Pago = @Faltante_Pago, Estado_Pago = @Estado_Pago where  ID_Pago = (select ID_Pago from inserted)
 end
+
+CREATE TABLE Agenda(
+Id_Calendario    int identity(1,1) primary key,
+Fecha        date,
+ID_Pacientes    INT 
+)
+
+select * from Horas
+drop table 
+Update Horas SET Nombre_Pac='{0}', Telefono_Pac = '{1}', Nombre_Enc= '{2}', Hora='2', Procedimiento= '{4}' where Fecha='2021-06-22' and Hora='2'
+select * from horas
+Create table Horas(
+Id_H        int identity(1,1) primary key,
+Nombre_Pac        varchar(20),
+Telefono_Pac    varchar(20),
+Nombre_Enc        varchar(20),
+Hora            varchar(2),
+Fecha            date,
+Procedimiento    varchar(50),
+ID_Calendario INT,
+disponible    char
+)
+
+CREATE TRIGGER InsertarHoras ON Agenda
+FOR Insert 
+AS
+ 
+BEGIN
+  INSERT INTO Horas (Hora, Fecha) values
+  (1, (select Fecha from inserted)),
+  (2, (select Fecha from inserted)),
+  (3,  (select Fecha from inserted)),
+  (4,  (select Fecha from inserted)),
+  (5,  (select Fecha from inserted)),
+  (6,  (select Fecha from inserted)),
+  (7, (select Fecha from inserted))
+END
+
+select * from Agenda

@@ -22,8 +22,7 @@ namespace RecOptico
         {
             SqlConnection Con = DBComun.ObtenerConexion();
             string fecha = monthCalendar1.SelectionStart.Date.ToString("yyyy-MM-dd");
-            SqlCommand Comando = new SqlCommand(string.Format("Select Agenda.Id_Calendario, Agenda.Nombre_Pac as 'Nombre del paciente', Agenda.Telefono_Pac as 'Telefono', Agenda.Nombre_Enc as 'Encargado', Agenda.Fecha as 'Fecha', Agenda.Hora from Agenda,Horas where Agenda.Id_Calendario = Horas.ID_Calendario" +
-                " and Agenda.Fecha='{0}'", fecha), Con);
+            SqlCommand Comando = new SqlCommand(string.Format("Select Id_H, Nombre_Pac as 'Nombre del paciente', Telefono_Pac as 'Telefono', Nombre_Enc as 'Encargado', Fecha as 'Fecha', Hora from Horas where Fecha='{0}'", fecha), Con);
             SqlDataAdapter adaptador = new SqlDataAdapter();
             adaptador.SelectCommand = Comando;
             DataTable tabla = new DataTable();
@@ -35,6 +34,13 @@ namespace RecOptico
         private void Calendario_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void txtAtras_Click(object sender, EventArgs e)
+        {
+            Menu men = new Menu();
+            men.Show();
+            this.Hide();
         }
     }
 }

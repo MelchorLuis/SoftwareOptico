@@ -3,6 +3,10 @@
     "",
     "\\RecOptico"
   ],
+<<<<<<< HEAD
+  "SelectedNode": "\\RecOptico\\RecOptico\\Menu.cs",
+=======
   "SelectedNode": "\\RecOptico\\RecOptico.sln",
+>>>>>>> bc4a18d658758ad4223c74b7a944436c890d126e
   "PreviewInSolutionExplorer": false
 }

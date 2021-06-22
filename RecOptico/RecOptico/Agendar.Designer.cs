@@ -63,6 +63,7 @@ namespace RecOptico
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lblHistorial);
             this.panel1.Controls.Add(this.Calendario);
+            this.panel1.Controls.Add(this.cmdAtras);
             this.panel1.Location = new System.Drawing.Point(-5, -1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(414, 473);
@@ -165,18 +166,18 @@ namespace RecOptico
             // cmdAtras
             // 
             this.cmdAtras.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdAtras.Location = new System.Drawing.Point(568, 413);
+            this.cmdAtras.Location = new System.Drawing.Point(17, 428);
             this.cmdAtras.Name = "cmdAtras";
             this.cmdAtras.Size = new System.Drawing.Size(95, 34);
             this.cmdAtras.TabIndex = 18;
             this.cmdAtras.Text = "&Atras";
             this.cmdAtras.UseVisualStyleBackColor = true;
-            this.cmdAtras.Visible = false;
+            this.cmdAtras.Click += new System.EventHandler(this.cmdAtras_Click);
             // 
             // cmdRegistrar
             // 
             this.cmdRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmdRegistrar.Location = new System.Drawing.Point(467, 413);
+            this.cmdRegistrar.Location = new System.Drawing.Point(522, 413);
             this.cmdRegistrar.Name = "cmdRegistrar";
             this.cmdRegistrar.Size = new System.Drawing.Size(95, 34);
             this.cmdRegistrar.TabIndex = 17;
@@ -236,7 +237,6 @@ namespace RecOptico
             this.Controls.Add(this.lblEncargado);
             this.Controls.Add(this.cbEncargado);
             this.Controls.Add(this.lblProcedimiento);
-            this.Controls.Add(this.cmdAtras);
             this.Controls.Add(this.cmdRegistrar);
             this.Controls.Add(this.cbPaciente);
             this.Controls.Add(this.lblPaciente);

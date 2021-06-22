@@ -142,15 +142,34 @@ namespace RecOptico
             conexion.Close();
             return resultado;
         }
-        public static int Existe(int ID_P)
+        public static int Existe(string ID_P)
         {
-            int us = 0;
+            int us = -1;
             SqlConnection conn = DBComun.ObtenerConexion();
-            SqlCommand comando = new SqlCommand(string.Format("select ID_Pacientes from Pacientes where ID_Pacientes = '{0}'", ID_P), conn);
-            us = comando.ExecuteNonQuery();
+            SqlCommand comando = new SqlCommand(string.Format("select * from Pacientes where ID_Pacientes = '{0}'", ID_P),conn);
+            SqlDataReader reader = comando.ExecuteReader();
+            while(reader.Read())
+            {
+                us = 50;
+            }
             conn.Close();
             return us;
         }
+        public static int ExisteAbono(string ID_P)
+        {
+            int us = -1;
+            SqlConnection conn = DBComun.ObtenerConexion();
+            SqlCommand comando = new SqlCommand(string.Format("select * from HistorialPagos where ID_Pago = '{0}'", ID_P), conn);
+            SqlDataReader reader = comando.ExecuteReader();
+            while (reader.Read())
+            {
+                us = 50;
+            }
+            conn.Close();
+            return us;
+        }
+
+
         public static string ValidarCorreo(string Correo)
         {
             String Contrasena = "";

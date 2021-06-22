@@ -19,7 +19,7 @@ namespace RecOptico
 
         private void cmdDesplegar_Click(object sender, EventArgs e)
         {
-            if(cbPagos.Text == "Añadir precio de lente")
+            if (cbPagos.Text == "Añadir precio de lente")
             {
                 lblFolio.Visible = true;
                 txtFolio.Visible = true;
@@ -29,7 +29,7 @@ namespace RecOptico
                 txtAbono.Visible = false;
                 cmdAgregarPago.Text = "Agregar precio";
             }
-            if(cbPagos.Text == "Abono")
+            if (cbPagos.Text == "Abono")
             {
                 lblFolio.Visible = true;
                 txtFolio.Visible = true;
@@ -54,25 +54,53 @@ namespace RecOptico
         {
             if (cbPagos.Text == "Añadir precio de lente")
             {
-                    if (Usuario.TotalLente(Convert.ToInt32(txtFolio.Text), Convert.ToDecimal(txtPrecioLente.Text)) > 0)
+                if (txtFolio.Text != "" && txtPrecioLente.Text != "")
+                {
+                    if (Usuario.Existe(txtFolio.Text) > 0)
                     {
-                        MessageBox.Show("El costo del lente fue registrado");
+                        if (Usuario.TotalLente(Convert.ToInt32(txtFolio.Text), Convert.ToDecimal(txtPrecioLente.Text)) > 0)
+                        {
+                            MessageBox.Show("El costo del lente fue registrado");
+                        }
+                        else
+                        {
+                            MessageBox.Show("El costo del lente no fue registrado");
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("El costo del lente no fue registrado");
+                        MessageBox.Show("Folio no encontrado");
                     }
+                }
+                else
+                {
+                    MessageBox.Show("Profavor llene los dos campos necesarios");
+                }
             }
             /*--*/
             if (cbPagos.Text == "Abono")
             {
-                if (Usuario.PalAbono(Convert.ToInt32(txtFolio.Text), Convert.ToDecimal(txtAbono.Text)) > 0)
+                if (txtFolio.Text != "" && txtAbono.Text != "")
                 {
-                    MessageBox.Show("El abono fue actualizado con exito");
+                    if (Usuario.ExisteAbono(txtFolio.Text) > 0)
+                    {
+                        if (Usuario.PalAbono(Convert.ToInt32(txtFolio.Text), Convert.ToDecimal(txtAbono.Text)) > 0)
+                        {
+                            MessageBox.Show("El abono fue actualizado con exito");
+                        }
+                        else
+                        {
+                            MessageBox.Show("El abono no fue actualizado");
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Folio no registrado");
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("El abono no fue actualizado");
+                    MessageBox.Show("Profavor llene los dos campos necesarios");
                 }
             }
         }
@@ -89,6 +117,13 @@ namespace RecOptico
             lblAbono.Visible = false;
             txtAbono.Visible = false;
             cmdAgregarPago.Visible = false;
+        }
+
+        private void cmdAtras_Click(object sender, EventArgs e)
+        {
+            Menu men = new Menu();
+            men.Show();
+            this.Hide();
         }
     }
 }

@@ -15,7 +15,6 @@ namespace RecOptico
     {
         public Agendar()
         {
-            // Pacientes
             InitializeComponent();
             SqlConnection Con = DBComun.ObtenerConexion();
             SqlCommand Comando = new SqlCommand(string.Format("Select * from Pacientes"), Con);
@@ -49,25 +48,53 @@ namespace RecOptico
 
         private void cmdRegistrar_Click(object sender, EventArgs e)
         {
-            SqlConnection Con = DBComun.ObtenerConexion();
-            SqlCommand Comando = new SqlCommand(string.Format("Update Agenda SET Nombre_Pac='{0}', Telefono_Pac = '{1}', Nombre_Enc= '{2}', Hora='{3}', Procedimiento= '{4}' where Fecha='{5}'", cbPaciente.SelectedItem, txtTelefono.Text, cbEncargado.SelectedItem, cbHora.SelectedItem, txtProcedimiento.Text, fecha), Con);
-            Comando.ExecuteNonQuery();
-            Con.Close();
-            MessageBox.Show("Se guardo la cita");
+            if (cbHora.Text != "" && cbEncargado.Text != "" && cbPaciente.Text != "" && txtTelefono.Text != "" && txtProcedimiento.Text != "")
+            {
+                string fecha = Calendario.SelectionStart.Date.ToString("yyyy-MM-dd");
+
+                SqlConnection Con = DBComun.ObtenerConexion();
+                SqlCommand Comando = new SqlCommand(string.Format("Update Horas SET Nombre_Pac='{0}', Telefono_Pac = '{1}', Nombre_Enc= '{2}', Hora='{3}', Procedimiento= '{4}' where Fecha='{5}' and Hora='{3}'", cbPaciente.SelectedItem, txtTelefono.Text, cbEncargado.SelectedItem, cbHora.SelectedItem, txtProcedimiento.Text, fecha), Con);
+                Comando.ExecuteNonQuery();
+                Con.Close();
+                cbHora.Items.Clear();
+                Calendario.Enabled = true;
+                MessageBox.Show("Se guardo la cita");
+            }
+            else
+            {
+                MessageBox.Show("Por favor llenar todos los campos");
+            }
         }
-        string fecha = "";
+        
         private void button1_Click(object sender, EventArgs e)
         {
             SqlConnection Con = DBComun.ObtenerConexion();
-            fecha = Calendario.SelectionStart.Date.ToString("yyyy-MM-dd");
+            string fecha = Calendario.SelectionStart.Date.ToString("yyyy-MM-dd");
 
+            SqlCommand Coma = new SqlCommand(string.Format("Select * from Horas "), Con);
+            SqlDataAdapter da2 = new SqlDataAdapter(Coma);
 
+            DataSet ds2 = new DataSet();
 
+            da2.Fill(ds2, "Horas");
+            string repetido = "", bo = "";
+            foreach (DataRow row in ds2.Tables["Horas"].Rows)
+            {
+                repetido = Convert.ToDateTime(row["Fecha"]).ToString("yyyy-MM-dd");
 
-            SqlCommand Comando = new SqlCommand(string.Format("Insert Into Agenda (Fecha) values ('{0}')", fecha), Con);
-            Comando.ExecuteNonQuery();
+                if (repetido == fecha)
+                {
+                    bo = "si";
+                    break;
+                }
+
+            }
+            if (bo == "")
+            {
+                SqlCommand Comando = new SqlCommand(string.Format("Insert Into Agenda (Fecha) values ('{0}')", fecha), Con);
+                Comando.ExecuteNonQuery();
+            }
             Con.Close();
-            MessageBox.Show("Se guardo la cita");
             cbEncargado.Visible = true;
             cbPaciente.Visible = true;
             cbHora.Visible = true;
@@ -80,7 +107,7 @@ namespace RecOptico
             label2.Visible = true;
             button1.Visible = true;
             cmdRegistrar.Visible = true;
-            cmdAtras.Visible = false;
+            Calendario.Enabled = false;
             Hora();
         }
 
@@ -89,10 +116,9 @@ namespace RecOptico
         {
             SqlConnection Con = DBComun.ObtenerConexion();
 
-
+            string fecha = Calendario.SelectionStart.Date.ToString("yyyy-MM-dd");
             // Hora
-            SqlCommand Coma = new SqlCommand(string.Format("Select * from Horas,Agenda where Agenda.Id_Calendario " +
-                "= Horas.ID_Calendario and disponible is NULL"), Con);
+            SqlCommand Coma = new SqlCommand(string.Format("Select * from Horas where Fecha='{0}' and disponible is NULL", fecha), Con);
             SqlDataAdapter da2 = new SqlDataAdapter(Coma);
 
             DataSet ds2 = new DataSet();
@@ -110,6 +136,13 @@ namespace RecOptico
         {
             Application.Exit();
 
+        }
+
+        private void cmdAtras_Click(object sender, EventArgs e)
+        {
+            Menu men = new Menu();
+            men.Show();
+            this.Hide();
         }
     }
 }
