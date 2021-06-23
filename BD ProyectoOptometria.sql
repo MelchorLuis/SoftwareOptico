@@ -86,7 +86,7 @@ Abono_Pago decimal,
 Faltante_Pago decimal,
 Estado_Pago varchar(10)
 )
-drop table HistorialPagos
+
 create procedure sp_MostrarPacientes
 as
 select * from Pacientes
@@ -173,5 +173,4 @@ BEGIN
   (7, (select Fecha from inserted))
 END
 
-select * from HistorialPagos
 
