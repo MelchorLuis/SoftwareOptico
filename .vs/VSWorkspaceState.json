@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\RecOptico",
-    "\\RecOptico\\RecOptico"
+    "\\RecOptico"
   ],
-  "SelectedNode": "\\RecOptico\\RecOptico\\RecuperarContraseña.cs",
+  "SelectedNode": "\\RecOptico\\RecOptico.sln",
   "PreviewInSolutionExplorer": false
 }

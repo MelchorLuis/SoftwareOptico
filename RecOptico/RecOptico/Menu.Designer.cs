@@ -81,7 +81,7 @@ namespace RecOptico
             // 
             this.cmdAgenda.BackColor = System.Drawing.Color.AliceBlue;
             this.cmdAgenda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdAgenda.Location = new System.Drawing.Point(299, 177);
+            this.cmdAgenda.Location = new System.Drawing.Point(110, 262);
             this.cmdAgenda.Name = "cmdAgenda";
             this.cmdAgenda.Size = new System.Drawing.Size(113, 69);
             this.cmdAgenda.TabIndex = 4;
@@ -93,7 +93,7 @@ namespace RecOptico
             // 
             this.cmdHistorial.BackColor = System.Drawing.Color.AliceBlue;
             this.cmdHistorial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdHistorial.Location = new System.Drawing.Point(110, 178);
+            this.cmdHistorial.Location = new System.Drawing.Point(299, 177);
             this.cmdHistorial.Name = "cmdHistorial";
             this.cmdHistorial.Size = new System.Drawing.Size(113, 69);
             this.cmdHistorial.TabIndex = 5;
@@ -114,7 +114,7 @@ namespace RecOptico
             // 
             this.cmdPagos.BackColor = System.Drawing.Color.AliceBlue;
             this.cmdPagos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmdPagos.Location = new System.Drawing.Point(110, 262);
+            this.cmdPagos.Location = new System.Drawing.Point(110, 177);
             this.cmdPagos.Name = "cmdPagos";
             this.cmdPagos.Size = new System.Drawing.Size(113, 69);
             this.cmdPagos.TabIndex = 12;
@@ -184,7 +184,7 @@ namespace RecOptico
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Pink;
             this.pictureBox6.Image = global::RecOptico.Properties.Resources.Imagenpago;
-            this.pictureBox6.Location = new System.Drawing.Point(50, 262);
+            this.pictureBox6.Location = new System.Drawing.Point(50, 177);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(64, 69);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -195,7 +195,7 @@ namespace RecOptico
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Pink;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(238, 177);
+            this.pictureBox5.Location = new System.Drawing.Point(49, 262);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(64, 69);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -206,7 +206,7 @@ namespace RecOptico
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Pink;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(50, 178);
+            this.pictureBox3.Location = new System.Drawing.Point(239, 177);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(64, 69);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
